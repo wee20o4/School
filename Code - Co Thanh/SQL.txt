@@ -1,0 +1,95 @@
+CREATE TABLE Account (
+    id VARCHAR(8) PRIMARY KEY,
+    username NVARCHAR(100) NOT NULL,
+    password NVARCHAR(100) NOT NULL DEFAULT '0'
+);
+
+CREATE TABLE AccountCategory (
+    id VARCHAR(8) PRIMARY KEY,
+    Category VARCHAR(100) NOT NULL, -- Chủ, Nhân viên, Khách
+    FlowCinema VARCHAR(100) NOT NULL -- Chủ tiệm Nguyễn Văn A (khách thuộc cửa hàng nào thì mới thấy product của cửa hàng đó)
+);
+ALTER TABLE AccountCategory ADD CONSTRAINT fk_AccountCategory_Account FOREIGN KEY (id) REFERENCES Account(id);
+
+CREATE TABLE Manager(
+    id VARCHAR(8) PRIMARY KEY,
+    NameCinema NVARCHAR(100) NOT NULL, -- tên quán
+    Address NVARCHAR(100) NOT NULL -- địa chỉ
+);
+ALTER TABLE Manager ADD CONSTRAINT fk_Manager_Account FOREIGN KEY (id) REFERENCES Account(id);
+
+CREATE TABLE Staff(
+    id VARCHAR(8) PRIMARY KEY,
+    Salary FLOAT NOT NULL -- lương
+);
+ALTER TABLE Staff ADD CONSTRAINT fk_Staff_Account FOREIGN KEY (id) REFERENCES Account(id);
+
+CREATE TABLE Client(
+    id VARCHAR(8) PRIMARY KEY,
+    idOrder VARCHAR(8) NOT NULL -- lưu id của bill
+);
+ALTER TABLE Client ADD CONSTRAINT fk_Client_Account FOREIGN KEY (id) REFERENCES Account(id);
+
+CREATE TABLE Bill(
+    id VARCHAR(8) PRIMARY KEY,
+    DateOrder DATE NOT NULL DEFAULT GETDATE(), -- today
+    Status INT NOT NULL DEFAULT 0, -- 0: Chưa thanh toán, 1: Đã thanh toán
+    idUserPayer VARCHAR(8) NOT NULL -- người thực hiện thanh toán: online: client, nhưng trực tiếp có thể là nhân viên
+);
+
+CREATE TABLE UserInfo(
+    id VARCHAR(8) PRIMARY KEY,
+    FirstName NVARCHAR(100) NOT NULL,
+    LastName NVARCHAR(100) NOT NULL,
+    Email NVARCHAR(100) NOT NULL,
+    PhoneNumber NVARCHAR(11) NOT NULL,
+    YearOlds INT NOT NULL,
+    idBill VARCHAR(8) NOT NULL -- lịch sử thanh toán
+);
+ALTER TABLE UserInfo ADD CONSTRAINT fk_UserInfo_Bill FOREIGN KEY (idBill) REFERENCES Bill(id);
+
+CREATE TABLE Movie(
+    id VARCHAR(8) PRIMARY KEY,
+    name NVARCHAR(100) NOT NULL,
+    price FLOAT NOT NULL DEFAULT 0,
+    Showtime DATETIME NOT NULL DEFAULT GETDATE(),
+    DurationOfTime TIME NOT NULL -- thời lượng thời gian phim
+);
+
+CREATE TABLE ProductCategory(
+    id VARCHAR(8) PRIMARY KEY,
+    name NVARCHAR(100) NOT NULL -- Bắp, Nước (loại)
+);
+
+CREATE TABLE Product(
+    id VARCHAR(8) PRIMARY KEY,
+    name NVARCHAR(100) NOT NULL, -- Bắp rang bơ, phô mai, nước : cocca pepsi, ...
+    price FLOAT NOT NULL DEFAULT 0,
+    idCategory VARCHAR(8) NOT NULL
+);
+ALTER TABLE Product ADD CONSTRAINT fk_Product_ProductCategory FOREIGN KEY (idCategory) REFERENCES ProductCategory(id);
+
+CREATE TABLE Seat(
+    id VARCHAR(8) PRIMARY KEY,
+    name NVARCHAR(100) NOT NULL, -- A01, A02, ...
+    idMovie VARCHAR(8) NOT NULL, -- Ghế của Phim nào?
+    Status INT NOT NULL DEFAULT 0 -- 1: ghế có người, 0: ghế trống
+);
+ALTER TABLE Seat ADD CONSTRAINT fk_Seat_Movie FOREIGN KEY (idMovie) REFERENCES Movie(id);
+
+CREATE TABLE ManagerOperated (
+    idManager VARCHAR(8) PRIMARY KEY,
+    idStaff VARCHAR(8) NOT NULL,
+    idClient VARCHAR(8) NOT NULL,
+    idProduct VARCHAR(8) NOT NULL,
+    idMovies VARCHAR(8) NOT NULL
+);
+ALTER TABLE ManagerOperated ADD CONSTRAINT fk_ManagerOperated_Manager FOREIGN KEY (idManager) REFERENCES Manager(id);
+ALTER TABLE ManagerOperated ADD CONSTRAINT fk_ManagerOperated_Staff FOREIGN KEY (idStaff) REFERENCES Staff(id);
+ALTER TABLE ManagerOperated ADD CONSTRAINT fk_ManagerOperated_Client FOREIGN KEY (idClient) REFERENCES Client(id);
+ALTER TABLE ManagerOperated ADD CONSTRAINT fk_ManagerOperated_Product FOREIGN KEY (idProduct) REFERENCES Product(id);
+ALTER TABLE ManagerOperated ADD CONSTRAINT fk_ManagerOperated_Movies FOREIGN KEY (idMovies) REFERENCES Movie(id);
+
+ALTER TABLE UserInfo ADD CONSTRAINT fk_UserInfo_Manager FOREIGN KEY (id) REFERENCES Manager(id);
+ALTER TABLE UserInfo ADD CONSTRAINT fk_UserInfo_Staff FOREIGN KEY (id) REFERENCES Staff(id);
+ALTER TABLE UserInfo ADD CONSTRAINT fk_UserInfo_Client FOREIGN KEY (id) REFERENCES Client(id);

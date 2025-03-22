@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\bin\Debug\listbox.exe.config
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\bin\Debug\listbox.exe
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\bin\Debug\listbox.pdb
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.Form1.resources
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.exe
+E:\Tài Liệu Của Cường\New folder\WindowsFormsApp1\listbox\obj\Debug\listbox.pdb

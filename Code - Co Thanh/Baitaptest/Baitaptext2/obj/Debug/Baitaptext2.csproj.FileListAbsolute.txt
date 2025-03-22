@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\bin\Debug\Baitaptext2.exe.config
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\bin\Debug\Baitaptext2.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\bin\Debug\Baitaptext2.pdb
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.Form1.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptext2\obj\Debug\Baitaptext2.pdb

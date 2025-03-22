@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\bin\Debug\Calculator.exe.config
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\bin\Debug\Calculator.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\bin\Debug\Calculator.pdb
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.MainForm.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\Calculator\obj\Debug\Calculator.pdb

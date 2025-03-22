@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|solutionrelative:LienKetDoi\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|solutionrelative:LienKetDoi\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F4D0D2FF-CA76-450F-833D-AA7BE8AA267A}|LienKetDoi\\LienKetDoi.vcxproj|solutionrelative:LienKetDoi\\input.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "output.txt",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\output.txt",
+              "RelativeDocumentMoniker": "LienKetDoi\\output.txt",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\output.txt",
+              "RelativeToolTip": "LienKetDoi\\output.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-31T12:23:29.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "input.txt",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\input.txt",
+              "RelativeDocumentMoniker": "LienKetDoi\\input.txt",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\input.txt",
+              "RelativeToolTip": "LienKetDoi\\input.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-31T12:23:16.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\main.cpp",
+              "RelativeDocumentMoniker": "LienKetDoi\\main.cpp",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\LienKetDoi\\LienKetDoi\\main.cpp",
+              "RelativeToolTip": "LienKetDoi\\main.cpp",
+              "ViewState": "AQIAACYAAAAAAAAAAAAuwDcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-31T12:23:04.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

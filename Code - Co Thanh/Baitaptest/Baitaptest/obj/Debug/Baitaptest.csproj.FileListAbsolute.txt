@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\bin\Debug\Baitaptest.exe.config
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\bin\Debug\Baitaptest.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\bin\Debug\Baitaptest.pdb
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.Form1.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Baitaptest\obj\Debug\Baitaptest.pdb

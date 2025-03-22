@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\bin\Debug\picturebox.exe.config
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\bin\Debug\picturebox.exe
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\bin\Debug\picturebox.pdb
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.Form1.resources
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.exe
+E:\Tài Liệu Của Cường\New folder\picturebox\picturebox\obj\Debug\picturebox.pdb

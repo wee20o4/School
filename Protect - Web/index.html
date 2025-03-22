@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/resign.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="form-resign" id="form-resign">
+
+        <h2 class="form-heading">
+            Form Đăng Ký
+        </h2>
+        
+        <div class="form-group">
+            <label for="fullname" class="form-label">Tên đầy đủ</label>
+            <input type="text" id="fullname" name="fullname" placeholder="VD: Cường Nguyễn">
+            <span class="form-message"></span> 
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" id="email" name="email" placeholder="email@gmail.com">
+            <span class="form-message"></span> 
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="text" id="password" name="password" placeholder="Nhập mật khẩu">
+            <span class="form-message"></span> 
+        </div>
+
+        <div class="form-group">
+            <label for="password_confimation" class="form-label">Nhập lại mật khẩu</label>
+            <input type="text" id="password_confimation" name="password_confimation" placeholder="Xác nhận mật khẩu">
+            <span class="form-message"></span> 
+        </div>
+
+        <button id="btn-resign" class="btn-resign">Đăng ký</button>
+
+        <a href="#" class="gologin">Bạn đã có tài khoản?</a>
+
+    </form>
+
+    <script src="./js/vadilator.js"></script>
+
+    <script>
+
+        Validator ({
+            form: '#form-resign',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.isRequired('#password'),
+                Validator.minLength('#password',6),
+                Validator.isRequired('#password_confimation'),
+                Validator.isComfirmed('#password_confimation', function(){
+                    return document.querySelector('#form-resign #password').value;
+                },'Mật khẩu nhập lại không trùng khớp.'),
+            ]
+        });
+    </script>
+
+</body>
+</html>

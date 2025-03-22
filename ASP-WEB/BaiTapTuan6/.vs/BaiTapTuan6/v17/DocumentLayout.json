@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\baitaptuan6\\qly_tv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|solutionrelative:baitaptuan6\\qly_tv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\baitaptuan6\\baitaptuan6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|solutionrelative:baitaptuan6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\baitaptuan6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB97C22B-9ACC-4A95-9596-FFC3CD328F9E}|BaiTapTuan6\\BaiTapTuan6.csproj|solutionrelative:baitaptuan6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Form1.cs",
+              "RelativeDocumentMoniker": "BaiTapTuan6\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Form1.cs",
+              "RelativeToolTip": "BaiTapTuan6\\Form1.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwCsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:59:23.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Qly_TV.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Qly_TV.cs",
+              "RelativeDocumentMoniker": "BaiTapTuan6\\Qly_TV.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Qly_TV.cs [Design]",
+              "RelativeToolTip": "BaiTapTuan6\\Qly_TV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:59:17.369Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Form1.cs",
+              "RelativeDocumentMoniker": "BaiTapTuan6\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\BaiTapTuan6\\BaiTapTuan6\\Form1.cs [Design]",
+              "RelativeToolTip": "BaiTapTuan6\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-26T04:59:15.48Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

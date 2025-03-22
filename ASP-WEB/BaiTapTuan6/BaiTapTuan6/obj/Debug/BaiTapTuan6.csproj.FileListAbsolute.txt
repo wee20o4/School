@@ -1,0 +1,11 @@
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\bin\Debug\BaiTapTuan6.exe.config
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\bin\Debug\BaiTapTuan6.exe
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\bin\Debug\BaiTapTuan6.pdb
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.csprojAssemblyReference.cache
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.Form1.resources
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.Properties.Resources.resources
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.Qly_TV.resources
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.csproj.GenerateResource.cache
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.csproj.CoreCompileInputs.cache
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.exe
+C:\Users\BVU\source\repos\BaiTapTuan6\BaiTapTuan6\obj\Debug\BaiTapTuan6.pdb

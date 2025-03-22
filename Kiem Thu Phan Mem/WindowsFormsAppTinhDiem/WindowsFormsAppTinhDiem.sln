@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsAppTinhDiem", "WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem.csproj", "{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProjectTinhDiem", "UnitTestProjectTinhDiem\UnitTestProjectTinhDiem.csproj", "{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

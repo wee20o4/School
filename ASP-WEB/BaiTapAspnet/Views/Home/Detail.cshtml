@@ -1,0 +1,28 @@
+@model ASP_WEB.Models.Product
+
+<title>Chi tiết sản phẩm</title>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Chi tiết sản phẩm</h1>
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="@Model.ImageURL" class="img-fluid rounded-start" alt="@Model.Name">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Name</h5>
+                    <p class="card-text"><strong>Giá:</strong> <span class="text-danger">@Model.Price.ToString("C0")</span></p>
+                    <p class="card-text"><strong>Mô tả ngắn:</strong> @Model.ShortDescription</p>
+                    <p class="card-text"><strong>Mô tả dài:</strong> @Model.LongDescription</p>
+                    <p class="card-text"><strong>Lưu trữ:</strong> @Model.Storage</p>
+                    <p class="card-text"><strong>Màn hình:</strong> @Model.Screen</p>
+                    <p class="card-text"><strong>Camera:</strong> @Model.Camera</p>
+                    <p class="card-text"><strong>Bảo hành:</strong> @Model.Warranty tháng</p>
+                    <a href="/" class="btn btn-primary">Quay lại danh sách</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

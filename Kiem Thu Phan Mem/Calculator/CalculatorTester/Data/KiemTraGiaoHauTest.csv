@@ -1,0 +1,9 @@
+﻿diemTraiX1,diemTraiY1,diemPhaiX1,diemPhaiY1,diemTraiX2,diemTraiY2,diemPhaiX2,diemPhaiY2,expectedIntersection
+1,1,4,4,3,3,6,6,true
+0,0,5,5,2,2,4,4,true
+1,1,3,3,4,4,6,6,false
+-2,-2,2,2,0,0,3,3,true
+2,2,5,5,6,6,8,8,false
+-3,-3,1,1,-2,-2,0,0,true
+1,1,7,7,5,5,10,10,true
+-5,-5,-1,-1,0,0,3,3,false

@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\bin\Debug\Timer.exe.config
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\bin\Debug\Timer.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\bin\Debug\Timer.pdb
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.Form1.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Timer\obj\Debug\Timer.pdb

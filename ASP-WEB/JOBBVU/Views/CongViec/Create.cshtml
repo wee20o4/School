@@ -1,0 +1,27 @@
+﻿@model CongViec
+
+<h2>Đăng tuyển công việc</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="TieuDe">Tiêu đề công việc</label>
+        <input asp-for="TieuDe" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="MoTa">Mô tả công việc</label>
+        <textarea asp-for="MoTa" class="form-control" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="YeuCau">Yêu cầu</label>
+        <textarea asp-for="YeuCau" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="HanNop">Hạn nộp hồ sơ</label>
+        <input asp-for="HanNop" type="date" class="form-control" required />
+    </div>
+
+    <button type="submit" class="btn btn-success">Đăng tuyển</button>
+</form>

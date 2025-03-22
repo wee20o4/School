@@ -1,0 +1,153 @@
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none; /*Loại bỏ gạch chân cho đường dẫn*/
+    color: black;
+
+}
+body{
+    font-size: 1.3rem; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+:root {
+    --darkblue: #6c7ee1;
+    --blue: #92b9e3;
+    --orange: #ffc4a4;
+    --pink: #fba2d0;
+    --purple: #c688eb;
+    --gray: rgba(142, 138, 138, 0.367);
+    --white: rgb(242, 242, 242);
+    --smooth: all 0.3s ease-in;
+    --shadow: var(--gray) .2rem .2rem .5rem .2rem;
+}
+
+.form-resign {
+    width: 50rem;
+    height: 65rem;
+    border: .2rem solid var(--gray);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 0px 0px 1rem 1rem;
+    font-size: 2rem;
+    margin-top: 8rem;
+    box-shadow: var(--shadow);
+}
+
+.form-heading {
+    width: 100%;
+    background-color: #6c7ee1;
+    font-size: 5rem;
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.form-group {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    margin: .5rem auto;
+}
+
+.form-label {
+    font-weight: 550;
+    margin-bottom: .8rem;
+    color: rgb(182, 18, 182);
+}
+
+.form-message {
+    font-size: 1.5rem;
+    font-style: italic;
+    display: block;
+    margin-top: 0.5rem;
+    height: .5em;
+}
+
+input {
+    outline:none;
+    border: none;
+    border-bottom: var(--darkblue) solid .2rem;
+    color: var(--darkblue);
+    height: 5rem;
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+input:hover,input:focus {
+    border-bottom: var(--darkblue) solid .3rem;
+}
+
+input:focus {
+    border-left: var(--darkblue) solid .8rem;
+    box-shadow:var(--blue) .2rem 1rem 1rem;
+}
+
+input::placeholder {
+    font-size: 1.5rem;
+    color:var(--blue);
+    font-style: italic;
+}
+
+.btn-resign {
+    width: 20rem;
+    height: 5rem;
+    margin: 1rem auto .3rem;
+    background-color: var(--darkblue);
+    border: var(--gray) .3rem solid;
+    border-radius: .8rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white);
+    transition: var(--smooth);
+    box-shadow: var(--shadow);
+}
+
+.btn-resign:hover {
+    transform: translateY(-.8rem);
+    opacity: 0.8;
+    box-shadow: var(--blue) 0 1.5rem 1.5rem .1rem;
+}
+
+.btn-resign :focus{
+    transform: translateY(-1rem);
+}
+
+.gologin {
+    color: var(--purple);
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.gologin:hover{
+    color: var(--darkblue);
+    text-decoration: underline;
+}
+
+
+
+.invalid .form-message {
+    color: red;
+}
+
+.invalid input {
+    border-color: red;
+    border-left: red solid .8rem;
+}
+
+
+

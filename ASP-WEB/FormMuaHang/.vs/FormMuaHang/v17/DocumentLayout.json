@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84EC39FD-F5FC-4BD6-9334-D8018DC3E4AB}|FormMuaHang\\FormMuaHang.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\formmuahang\\formmuahang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EC39FD-F5FC-4BD6-9334-D8018DC3E4AB}|FormMuaHang\\FormMuaHang.csproj|solutionrelative:formmuahang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84EC39FD-F5FC-4BD6-9334-D8018DC3E4AB}|FormMuaHang\\FormMuaHang.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\formmuahang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{84EC39FD-F5FC-4BD6-9334-D8018DC3E4AB}|FormMuaHang\\FormMuaHang.csproj|solutionrelative:formmuahang\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\FormMuaHang\\Form1.cs",
+              "RelativeDocumentMoniker": "FormMuaHang\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\FormMuaHang\\Form1.cs",
+              "RelativeToolTip": "FormMuaHang\\Form1.cs",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAwwJkAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:25:14.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\FormMuaHang\\Form1.cs",
+              "RelativeDocumentMoniker": "FormMuaHang\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\FormMuaHang\\FormMuaHang\\Form1.cs [Design]",
+              "RelativeToolTip": "FormMuaHang\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T12:11:48.046Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

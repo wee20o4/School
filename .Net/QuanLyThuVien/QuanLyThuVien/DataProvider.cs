@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace QuanLyThuVien
+{
+    class DataProvider
+    {
+        const string connstring = "Data Source=CUONGKUTE\\SQLEXPRESS;Initial Catalog=QLThuVien;Integrated Security=True;TrustServerCertificate=True";
+        private static SqlConnection connection;
+        //public static List<DangNhap> dangNhaps = new List<DangNhap>();
+
+        public static void OpenConnection()
+        {
+            connection = new SqlConnection(connstring);
+            connection.Open();
+        }
+
+        public static void CloseConnection()
+        {
+            connection.Close();
+        }
+
+
+
+        public static DataTable LoadCSDL(string sql)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                OpenConnection();
+                SqlCommand command = new SqlCommand(sql, connection);
+                SqlDataAdapter da = new SqlDataAdapter(command);
+                da.Fill(dt);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Loi: "+ex.Message);
+            }
+            finally
+            {
+                CloseConnection();
+            }
+            return dt;
+        }
+
+        public static int ThaoTacCSDL(string sql)
+        {
+            int kq = 0;
+            try
+            {
+                OpenConnection();
+                SqlCommand sqlCommand = new SqlCommand(sql, connection);
+                kq = sqlCommand.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+
+            }
+            finally
+            {
+                CloseConnection();
+            }
+
+            return kq;
+        }
+    }
+}

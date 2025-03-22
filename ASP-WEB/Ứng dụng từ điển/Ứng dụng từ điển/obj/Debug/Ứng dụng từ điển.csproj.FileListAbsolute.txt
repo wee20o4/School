@@ -1,0 +1,89 @@
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\grpc_csharp_ext.x86.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\grpc_csharp_ext.x64.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\libgrpc_csharp_ext.x64.so
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\libgrpc_csharp_ext.x64.dylib
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Ứng dụng từ điển.exe.config
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Ứng dụng từ điển.exe
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Ứng dụng từ điển.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.CommonProtos.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.Grpc.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Auth.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Core.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Iam.V1.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Location.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Translate.V3.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.LongRunning.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Protobuf.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Auth.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.Api.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Client.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Common.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Newtonsoft.Json.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Buffers.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.CodeDom.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Memory.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Net.Http.WinHttpHandler.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Numerics.Vectors.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Threading.Tasks.Extensions.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.ValueTuple.dll
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.CommonProtos.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.CommonProtos.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.Grpc.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Api.Gax.Grpc.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Auth.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Auth.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Core.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Apis.Core.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Iam.V1.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Iam.V1.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Location.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Location.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Translate.V3.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Cloud.Translate.V3.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.LongRunning.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.LongRunning.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Protobuf.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Google.Protobuf.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Auth.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Auth.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.Api.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Core.Api.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Client.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Client.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Common.pdb
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Grpc.Net.Common.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\Newtonsoft.Json.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Buffers.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.CodeDom.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Memory.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Net.Http.WinHttpHandler.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Numerics.Vectors.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.Threading.Tasks.Extensions.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\bin\Debug\System.ValueTuple.xml
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng từ điển.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng_dụng_từ_điển.Form1.resources
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng_dụng_từ_điển.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng từ điển.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng từ điển.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng.91EFB871.Up2Date
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng từ điển.exe
+E:\Tài Liệu Của Cường\New folder\Ứng dụng từ điển\Ứng dụng từ điển\obj\Debug\Ứng dụng từ điển.pdb

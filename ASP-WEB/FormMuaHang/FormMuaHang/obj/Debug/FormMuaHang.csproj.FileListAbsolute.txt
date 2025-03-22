@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\bin\Debug\FormMuaHang.exe.config
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\bin\Debug\FormMuaHang.exe
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\bin\Debug\FormMuaHang.pdb
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.Form1.resources
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.exe
+E:\Tài Liệu Của Cường\New folder\FormMuaHang\FormMuaHang\obj\Debug\FormMuaHang.pdb

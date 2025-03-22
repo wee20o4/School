@@ -1,0 +1,7 @@
+﻿SoHocVien,HoTen,QueQuan,Diem1,Diem2,Diem3,Expected
+1,Nguyen Van A,Hanoi,9,8,9,true
+3,Tran Van C,Danang,8,8,8,true
+5,Hoang Van E,CanTho,9,9,9,true
+6,Do Thi F,Hue,5,5,5,false
+7,Nguyen Van G,Vinh,8.5,7.5,8,true
+8,Le Thi H,BacNinh,7,6,9,false

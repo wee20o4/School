@@ -1,0 +1,12 @@
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.exe.config
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.exe
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\bin\Debug\QuanLyNhaKhoa.pdb
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.exe
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.pdb
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.DangKy.resources
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.DangNhap.resources
+E:\Tài Liệu Của Cường\New folder\QuanLyNhaKhoa\QuanLyNhaKhoa\obj\Debug\QuanLyNhaKhoa.Home.resources

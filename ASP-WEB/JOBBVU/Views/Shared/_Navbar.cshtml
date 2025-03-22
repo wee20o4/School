@@ -1,0 +1,57 @@
+﻿<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="/">
+            <img src="~/image/logo2.png " alt="JobPortal" height="200"> JobPortal
+        </a>
+        <!-- Nút toggle cho mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            @if (User.IsInRole("Admin"))
+            {
+                <a href="/Admin/Dashboard" class=" text-white ms-3">Trang Quản Trị</a>
+            }
+            @if (User.IsInRole("Nhà tuyển dụng"))
+            {
+                <a href="/Employer/ManageJobs" class=" text-white ms-3">Quản lý tin tuyển dụng</a>
+            }
+            @if (User.IsInRole("Sinh Viên"))
+            {
+                <a href="/User/Profile" class=" text-white ms-3">Hồ sơ của tôi</a>
+            }
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Trang Chủ</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Home/About">Về Chúng Tôi</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Job">Việc làm</a></li>
+                <li class="nav-item"><a class="nav-link" href="/User/Profile">Hồ Sơ CV</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Home/Tools">Công Cụ</a></li>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/Account/Profile">
+                            Xin chào, @User.Identity.Name
+                        </a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/Account/Logout">Đăng xuất</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning text-dark ms-2" href="/Employer/PostJob">Đăng Tuyển</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item"><a class="nav-link" href="/Account/Login">Đăng nhập</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Account/Register">Đăng ký</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning text-dark ms-2" href="/Employer/PostJob">Đăng Tuyển</a>
+                    </li>
+                }
+
+            </ul>
+        </div>
+    </div>
+</nav>

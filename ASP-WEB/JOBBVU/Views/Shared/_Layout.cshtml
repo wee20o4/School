@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - JOBBVU</title>
+
+    <!-- Bootstrap & CSS -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true">
+    <link rel="stylesheet" href="~/JOBBVU.styles.css" asp-append-version="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navbar -->
+    <header class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <img src="~/images/logo.png" alt="Logo" height="40">
+            </a>
+
+            <!-- Nút toggle cho mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Home")">Trang Chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("About", "Home")">Về Chúng Tôi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Jobs", "Job")">Việc làm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Profile", "User")">Hồ Sơ CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Tools", "Home")">Công Cụ</a></li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                                <i class="fas fa-user"></i> @User.Identity.Name
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="@Url.Action("Logout", "Account")">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item"><a class="nav-link" href="@Url.Action("Login", "Account")">Đăng nhập</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="@Url.Action("Register", "Account")">Đăng ký</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Nội dung chính -->
+    <main class="flex-grow-1">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <!-- Cột 1: Về JobBVU -->
+                <div class="col-md-3">
+                    <h5>Về JobBVU</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-info-circle"></i> Giới thiệu</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-phone-alt"></i> Liên Hệ</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-question-circle"></i> Hỏi Đáp</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-file-contract"></i> Điều kiện dịch vụ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 2: Hồ sơ và CV -->
+                <div class="col-md-3">
+                    <h5>Hồ sơ & CV</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-file-alt"></i> Quản lý CV</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-user"></i> CV Profile</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-star"></i> Review CV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cột 3: Kết nối -->
+                <div class="col-md-3">
+                    <h5>Kết nối</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt"></i> 1 Trương Văn Bang, TP. Vũng Tàu</li>
+                        <li><i class="fas fa-phone-alt"></i> 035 994 6868</li>
+                        <li><i class="fas fa-envelope"></i> JobBVU@gmail.com</li>
+                    </ul>
+                </div>
+
+                <!-- Cột 4: Trường đại học BVU -->
+                <div class="col-md-3">
+                    <h5>Trường Đại học Bà Rịa - Vũng Tàu</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none"><i class="fas fa-university"></i> Giới thiệu</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dòng bản quyền -->
+            <div class="text-center mt-3">
+                <p class="mb-0">© 2025 JobBVU. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

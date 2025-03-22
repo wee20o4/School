@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\quanlynhakhoa\\quanlynhakhoa\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|solutionrelative:quanlynhakhoa\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\quanlynhakhoa\\quanlynhakhoa\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|solutionrelative:quanlynhakhoa\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\quanlynhakhoa\\quanlynhakhoa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|solutionrelative:quanlynhakhoa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\quanlynhakhoa\\quanlynhakhoa\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|solutionrelative:quanlynhakhoa\\dangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\quanlynhakhoa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C1707830-31F9-4102-AD6E-50701378DD81}|QuanLyNhaKhoa\\QuanLyNhaKhoa.csproj|solutionrelative:quanlynhakhoa\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.cs",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Home.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaKhoa\\Home.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Home.cs",
+              "RelativeToolTip": "QuanLyNhaKhoa\\Home.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAcwF8AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T15:59:42.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Home.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaKhoa\\Home.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Home.cs [Design]",
+              "RelativeToolTip": "QuanLyNhaKhoa\\Home.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T15:42:49.109Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaKhoa\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Form1.cs",
+              "RelativeToolTip": "QuanLyNhaKhoa\\Form1.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAASwCUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T15:44:04.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Form1.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaKhoa\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\Form1.cs [Design]",
+              "RelativeToolTip": "QuanLyNhaKhoa\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T14:53:44.598Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DangKy.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\DangKy.cs",
+              "RelativeDocumentMoniker": "QuanLyNhaKhoa\\DangKy.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\QuanLyNhaKhoa\\QuanLyNhaKhoa\\DangKy.cs [Design]",
+              "RelativeToolTip": "QuanLyNhaKhoa\\DangKy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-08T15:17:20.138Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\bin\Debug\Menu.exe.config
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\bin\Debug\Menu.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\bin\Debug\Menu.pdb
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.Form1.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.exe
+E:\Tài Liệu Của Cường\New folder\Baitaptest\Menu\obj\Debug\Menu.pdb

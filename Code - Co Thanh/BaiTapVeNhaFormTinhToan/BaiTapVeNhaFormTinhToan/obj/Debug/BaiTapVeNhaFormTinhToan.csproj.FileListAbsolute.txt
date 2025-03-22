@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\bin\Debug\BaiTapVeNhaFormTinhToan.exe.config
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\bin\Debug\BaiTapVeNhaFormTinhToan.exe
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\bin\Debug\BaiTapVeNhaFormTinhToan.pdb
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.Form1.resources
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.exe
+E:\Tài Liệu Của Cường\New folder\BaiTapVeNhaFormTinhToan\BaiTapVeNhaFormTinhToan\obj\Debug\BaiTapVeNhaFormTinhToan.pdb

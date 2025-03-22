@@ -1,0 +1,6 @@
+﻿a,b,c,renLuyen,expectedResult
+6,7,8,80,True
+5,5,6,75,False
+8,9,7,69,False
+7,7,7,70,True
+6,6,6,71,False

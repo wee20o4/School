@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\bin\Debug\WindowsFormsAppPTB1.exe.config
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\bin\Debug\WindowsFormsAppPTB1.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\bin\Debug\WindowsFormsAppPTB1.pdb
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.Form1.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.Properties.Resources.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppPTB1\WindowsFormsAppPTB1\obj\Debug\WindowsFormsAppPTB1.pdb

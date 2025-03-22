@@ -1,0 +1,11 @@
+﻿@model CongViec
+
+<h2>Xóa công việc</h2>
+
+<p>Bạn có chắc chắn muốn xóa công việc "<strong>@Model.TieuDe</strong>"?</p>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" asp-for="MaCV" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a class="btn btn-secondary" asp-action="Index">Hủy</a>
+</form>

@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\baitaptuan5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CC7-8CDA-438A-BDF2-2706A8EC39CA}|baitaptuan5\\baitaptuan5.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\baitaptuan5\\baitaptuan5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2103CC7-8CDA-438A-BDF2-2706A8EC39CA}|baitaptuan5\\baitaptuan5.csproj|solutionrelative:baitaptuan5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CC7-8CDA-438A-BDF2-2706A8EC39CA}|baitaptuan5\\baitaptuan5.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\baitaptuan5\\baitaptuan5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CC7-8CDA-438A-BDF2-2706A8EC39CA}|baitaptuan5\\baitaptuan5.csproj|solutionrelative:baitaptuan5\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\baitaptuan5\\baitaptuan5\\Form1.cs",
+              "RelativeDocumentMoniker": "baitaptuan5\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\baitaptuan5\\baitaptuan5\\Form1.cs",
+              "RelativeToolTip": "baitaptuan5\\Form1.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADgvz0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T15:34:38.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\baitaptuan5\\baitaptuan5\\Form1.cs",
+              "RelativeDocumentMoniker": "baitaptuan5\\Form1.cs",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\baitaptuan5\\baitaptuan5\\Form1.cs [Design]",
+              "RelativeToolTip": "baitaptuan5\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T15:13:48.634Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

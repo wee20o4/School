@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\bin\Debug\WindowsFormsAppTinhDiem.exe.config
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\bin\Debug\WindowsFormsAppTinhDiem.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\bin\Debug\WindowsFormsAppTinhDiem.pdb
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.Form1.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.Properties.Resources.resources
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.exe
+E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\WindowsFormsAppTinhDiem\WindowsFormsAppTinhDiem\obj\Debug\WindowsFormsAppTinhDiem.pdb

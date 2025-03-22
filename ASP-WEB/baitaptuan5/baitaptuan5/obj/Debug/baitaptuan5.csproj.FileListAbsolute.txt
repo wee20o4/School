@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\bin\Debug\baitaptuan5.exe.config
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\bin\Debug\baitaptuan5.exe
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\bin\Debug\baitaptuan5.pdb
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.Form1.resources
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.exe
+E:\Tài Liệu Của Cường\New folder\baitaptuan5\baitaptuan5\obj\Debug\baitaptuan5.pdb

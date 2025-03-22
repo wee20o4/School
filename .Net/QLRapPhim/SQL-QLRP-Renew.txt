@@ -1,0 +1,203 @@
+CREATE database QuanLyRapPhim
+GO
+
+USE QuanLyRapPhim
+GO
+
+CREATE TABLE Users (
+    id INT AUTO_INCREMENT,
+    username NVARCHAR(100) NOT NULL,
+    password NVARCHAR(100) NOT NULL DEFAULT 0,
+    email NVARCHAR(100) NOT NULL,
+    phone NVARCHAR(11),
+    firstname NVARCHAR(100) NOT NULL,
+    lastname NVARCHAR(100) NOT NULL,
+    age INT NOT NULL DEFAULT 12,
+    gender INT DEFAULT 0, /* 0: Nam, 1: Nữ */
+    /*avatar VARBINARY(MAX) NULL,*/
+    status INT NOT NULL DEFAULT 0, /* 0: hoạt động, 1: bị khóa (ban) */
+    note NVARCHAR(1000) NULL,
+    PRIMARY KEY (id)
+);
+GO
+
+CREATE TABLE Admin (
+    id INT PRIMARY KEY,
+    createddate DATETIME DEFAULT NOW(), 
+    FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE
+);
+GO
+CREATE TABLE Client (
+    id INT PRIMARY KEY,
+    accumulate INT NOT NULL DEFAULT 0, -- điểm tích lũy
+    FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE
+);
+GO
+CREATE TABLE Staff (
+    id INT PRIMARY KEY,
+    salary FLOAT NOT NULL DEFAULT 0,
+    department NVARCHAR(50) DEFAULT 'Bán vé', -- Bán vé, bảo vệ, nhân viên vệ sinh,...
+    FOREIGN KEY (id) REFERENCES Users(id) ON DELETE CASCADE
+);
+GO
+
+CREATE TABLE Movie (
+    id INT AUTO_INCREMENT,
+    name NVARCHAR(100) NOT NULL,
+    price FLOAT NOT NULL DEFAULT 0,
+  	language NVARCHAR(50) NOT NULL DEFAULT 'English',
+    durationoftime TIME(0) NOT NULL DEFAULT '00:00',
+  	description NVARCHAR(500) NULL, -- Mô tả ngắn về nội dung phim
+	  /*poster VARBINARY(MAX) NULL,*/
+	  PRIMARY KEY (id)
+);
+GO
+
+CREATE TABLE Room (
+    id INT AUTO_INCREMENT,
+    name NVARCHAR(2) NOT NULL,/*A,B,C,..*/
+    capacity INT DEFAULT 0, /*sức chứa/tổng số lượng ghế*/
+    status INT NOT NULL DEFAULT 0, /*0: trống,1: đang chiếu*/
+    PRIMARY KEY (id)
+);
+GO
+
+CREATE TABLE Showtimes (
+  id INT AUTO_INCREMENT,
+  dates DATETIME NOT NULL DEFAULT NOW(), -- ngày chiếu
+  showtime TIME(0) NOT NULL DEFAULT '00:00', -- giờ chiếu
+  idadmin INT, -- Người lên lịch
+  idmovie INT, -- Phim được chiếu
+  idroom INT, -- Phòng được chiếu
+  PRIMARY KEY (id),
+  FOREIGN KEY (idadmin) REFERENCES Admin(id) ON DELETE SET NULL,
+  FOREIGN KEY (idmovie) REFERENCES Movie(id) ON DELETE SET NULL,
+  FOREIGN KEY (idroom) REFERENCES Room(id) ON DELETE SET NULL
+);
+GO
+
+-- Tạo table 1 phòng có bao nhiêu ghế (cố định và gán tên cho từng ghế trong phòng)
+CREATE TABLE Seat (
+    id INT AUTO_INCREMENT,
+    name VARCHAR(3) NOT NULL, -- A1, A2, A3, ... B1, B2, B3, ... Tên ghế trong 1 phòng không trùng nhau
+    idroom INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (idroom) REFERENCES Room(id) ON DELETE SET NULL
+);
+GO
+
+-- Tạo bảng để theo dõi trạng thái của ghế theo giờ
+CREATE TABLE SeatOfTime (
+    id INT AUTO_INCREMENT, -- id giờ của cái ghế nào đó
+    idseat INT, -- id của ghế
+    idshowtime INT, -- id lịch chiếu để biết vào giờ đó ngày đó xem status thế nào
+    status INT NOT NULL DEFAULT 0, -- 0: ghế rảnh, 1: ghế bận
+    PRIMARY KEY (id),
+    FOREIGN KEY (idseat) REFERENCES Seat(id) ON DELETE SET NULL,
+    FOREIGN KEY (idshowtime) REFERENCES Showtimes(id) ON DELETE SET NULL
+);
+GO
+
+CREATE TABLE Bill (
+    id INT AUTO_INCREMENT,
+    dateorder DATE NOT NULL, -- ngày giao dịch
+    status INT NOT NULL DEFAULT 0, -- trạng thái 1: Đã hoàn thành, 0: chưa hoàn thành
+    iduserpayer INT NULL, -- người thực hiện giao dịch (nếu KH giao dịch là id của họ, nếu NV, Admin thực hiện thì id của họ)
+    idshowtime INT NULL, -- dựa theo lịch tìm luôn phim gì, giờ chiếu, phòng nào, tìm giá phim từ phim
+    seatcount INT NOT NULL DEFAULT 1,
+    seatsordered VARCHAR(100) NULL, -- Tên các ghế được đặt
+    totalamount FLOAT DEFAULT 0, -- tổng tiền: số lượng * giá
+    PRIMARY KEY (id),
+    FOREIGN KEY (idshowtime) REFERENCES Showtimes(id) ON DELETE SET NULL,
+    FOREIGN KEY (iduserpayer) REFERENCES Users(id) ON DELETE SET NULL
+);
+GO
+
+CREATE TABLE WorkSchedule (
+    id INT AUTO_INCREMENT,
+    idstaff INT,
+    workdate DATE NOT NULL,
+    starttime TIME(0) NOT NULL,
+    endtime TIME(0) NOT NULL,
+    status NVARCHAR(20) NOT NULL DEFAULT '0', -- Đã lên lịch: 0, Tạm ngưng: 1
+    idadmin INT,
+    PRIMARY KEY (id),
+    FOREIGN KEY (idstaff) REFERENCES Staff(id) ON DELETE CASCADE,
+    FOREIGN KEY (idadmin) REFERENCES Admin(id) ON DELETE CASCADE -- Người xếp lịch
+);
+GO
+
+-- Thêm vào bảng Users
+INSERT INTO Users (username, password, email, phone, firstname, lastname, age, gender, status, note) VALUES 
+('siri', '1', 'siri@gmail.com', '0865000000', 'Bao', 'Hoang', 20, 0, 0, NULL),
+('minhcuong', 'password123', 'minhcuong@gmail.com', '0865000001', 'Minh', 'Cuong', 20, 0, 0, NULL),
+('client1', 'password123', 'client1@gmail.com', '0865000002', 'Khach', 'Hang A', 29, 1, 0, NULL),
+('client2', 'password123', 'client2@gmail.com', '0865000003', 'Khach', 'Hang B', 26, 1, 0, NULL),
+('staff1', 'password123', 'staff1@gmail.com', '0865000004', 'Staff', 'A', 24, 0, 0, NULL),
+('staff2', 'password123', 'staff2@gmail.com', '0865000005', 'Staff', 'B', 24, 1, 0, NULL);
+
+-- Thêm vào bảng Admin
+INSERT INTO Admin (id) VALUES 
+(1),
+(2);
+
+-- Thêm vào bảng Client
+INSERT INTO Client (id, accumulate) VALUES
+(3, 200),
+(4, 300);
+
+-- Thêm vào bảng Staff
+INSERT INTO Staff (id, salary) VALUES
+(5, 28000),
+(6, 26000);
+
+-- Thêm vào bảng Movie
+INSERT INTO Movie (name, price, durationoftime) VALUES
+('Movie D', 15.0, '02:20:00'),
+('Movie E', 7.0, '01:50:00'),
+('Movie F', 9.0, '02:05:00');
+
+-- Thêm vào bảng Room
+INSERT INTO Room (name, capacity, status) VALUES
+('A', 130, 0),
+('B', 140, 1),
+('C', 160, 1);
+
+-- Thêm vào bảng Seat
+INSERT INTO Seat (name, idroom) VALUES
+('A0', 1),
+('A1', 2),
+('A2', 1),
+('B0', 1),
+('B1', 3),
+('B2', 1);
+
+-- Thêm vào bảng Showtimes
+INSERT INTO Showtimes (dates, showtime, idadmin, idmovie, idroom) VALUES
+('2024-07-01', '10:00:00', 1, 1, 1),
+('2024-07-01', '14:00:00', 1, 2, 1),
+('2024-07-01', '18:00:00', 1, 3, 1),
+('2024-07-02', '10:00:00', 2, 1, 2),
+('2024-07-02', '14:00:00', 2, 2, 2),
+('2024-07-02', '18:00:00', 2, 3, 3);
+
+-- Thêm vào bảng Bill
+INSERT INTO Bill (dateorder, status, iduserpayer, idshowtime, seatcount, seatsordered, totalamount) VALUES
+('2024-06-30', 1, 1, 1, 1, 'A1', 15.0),
+('2024-06-20', 0, 2, 2, 1, 'B1', 7.0),
+('2024-06-10', 1, 3, 3, 2, 'A2, B2', 21.0);
+
+-- Thêm vào bảng WorkSchedule
+INSERT INTO WorkSchedule (idstaff, workdate, starttime, endtime, status, idadmin) VALUES
+(5, '2024-07-01', '09:00:00', '18:00:00', '0', 1),
+(6, '2024-07-01', '09:00:00', '18:00:00', '0', 2);
+
+
+--TEXT
+--tên phim được chiếu vào ngày 01/07/2024, bạn có thể sử dụng câu truy vấn SQL như sau:
+SELECT m.name AS movie_name
+FROM Showtimes s
+JOIN Movie m ON s.idmovie = m.id
+WHERE DATE(s.dates) = '2024-07-01';
+
+

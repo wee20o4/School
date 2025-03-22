@@ -1,0 +1,13 @@
+﻿@model CongViec
+
+<h2>Chi tiết công việc</h2>
+
+<p><strong>Tiêu đề:</strong> @Model.TieuDe</p>
+<p><strong>Mô tả:</strong> @Model.MoTa</p>
+<p><strong>Yêu cầu:</strong> @Model.YeuCau</p>
+<p><strong>Ngày đăng:</strong> @Model.NgayDang.ToShortDateString()</p>
+<p><strong>Hạn nộp:</strong> @Model.HanNop.ToShortDateString()</p>
+
+<a class="btn btn-warning" asp-action="Edit" asp-route-id="@Model.MaCV">Chỉnh sửa</a>
+<a class="btn btn-danger" asp-action="Delete" asp-route-id="@Model.MaCV">Xóa</a>
+<a class="btn btn-secondary" asp-action="Index">Quay lại</a>

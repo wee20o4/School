@@ -1,0 +1,10 @@
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\bin\Debug\MayTinh.exe.config
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\bin\Debug\MayTinh.exe
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\bin\Debug\MayTinh.pdb
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.csproj.AssemblyReference.cache
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.Caculator.resources
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.Properties.Resources.resources
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.csproj.GenerateResource.cache
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.csproj.CoreCompileInputs.cache
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.exe
+E:\Tài Liệu Của Cường\New folder\MayTinh\MayTinh\obj\Debug\MayTinh.pdb
