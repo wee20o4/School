@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1DD0E443-613A-4580-861A-0A0F0791DBC4}|WindowsFormsAppPTB1\\WindowsFormsAppPTB1.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsappptb1\\windowsformsappptb1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1DD0E443-613A-4580-861A-0A0F0791DBC4}|WindowsFormsAppPTB1\\WindowsFormsAppPTB1.csproj|solutionrelative:windowsformsappptb1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsappptb1\\unittestprojectptb1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\unittestprojectptb1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|solutionrelative:unittestprojectptb1\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsappptb1\\unittestprojectptb1\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\unittestprojectptb1\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{A8222C55-2E48-497F-A977-385E143B45A6}|UnitTestProjectPTB1\\UnitTestProjectPTB1.csproj|solutionrelative:unittestprojectptb1\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DD0E443-613A-4580-861A-0A0F0791DBC4}|WindowsFormsAppPTB1\\WindowsFormsAppPTB1.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsappptb1\\windowsformsappptb1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DD0E443-613A-4580-861A-0A0F0791DBC4}|WindowsFormsAppPTB1\\WindowsFormsAppPTB1.csproj|solutionrelative:windowsformsappptb1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TestData.csv",
               "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\UnitTestProjectPTB1\\TestData.csv",
               "RelativeDocumentMoniker": "UnitTestProjectPTB1\\TestData.csv",
@@ -47,26 +47,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\UnitTestProjectPTB1\\UnitTest1.cs",
               "RelativeDocumentMoniker": "UnitTestProjectPTB1\\UnitTest1.cs",
               "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\UnitTestProjectPTB1\\UnitTest1.cs",
               "RelativeToolTip": "UnitTestProjectPTB1\\UnitTest1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T08:13:36.061Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
               "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\WindowsFormsAppPTB1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsAppPTB1\\Form1.cs",
               "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppPTB1\\WindowsFormsAppPTB1\\Form1.cs",
               "RelativeToolTip": "WindowsFormsAppPTB1\\Form1.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAADwvwoAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAqwAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T07:51:30.896Z",
               "EditorCaption": ""

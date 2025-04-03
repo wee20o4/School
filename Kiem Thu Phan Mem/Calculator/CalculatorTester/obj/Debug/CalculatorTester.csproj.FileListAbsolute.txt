@@ -28,3 +28,33 @@ E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\
 E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\HinhChuNhatTest.csv
 E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\KiemTraGiaoHauTest.csv
 E:\Tài Liệu Của Cường\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\HocVienTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\HinhChuNhatTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\HocVienTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\KiemTraGiaoHauTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\RadixTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\TestData.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\TestCong_DataSource.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\PowerTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Data\PolynomialTest.csv
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\CalculatorTester.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\CalculatorTester.pdb
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Calculator.exe
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\MathNet.Numerics.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\System.ValueTuple.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Calculator.pdb
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Calculator.exe.config
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\MathNet.Numerics.xml
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\bin\Debug\System.ValueTuple.xml
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\obj\Debug\CalculatorTester.csproj.AssemblyReference.cache
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\obj\Debug\CalculatorTester.csproj.CoreCompileInputs.cache
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\obj\Debug\Calculat.411C22ED.Up2Date
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\obj\Debug\CalculatorTester.dll
+E:\Schools\Kiem Thu Phan Mem\Calculator\CalculatorTester\obj\Debug\CalculatorTester.pdb

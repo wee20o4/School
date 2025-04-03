@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}|UnitTestProjectTinhDiem\\UnitTestProjectTinhDiem.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsapptinhdiem\\unittestprojecttinhdiem\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}|UnitTestProjectTinhDiem\\UnitTestProjectTinhDiem.csproj|solutionrelative:unittestprojecttinhdiem\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}|WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsapptinhdiem\\windowsformsapptinhdiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}|WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem.csproj|solutionrelative:windowsformsapptinhdiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}|WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsapptinhdiem\\windowsformsapptinhdiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,8 @@
       "RelativeMoniker": "D:0:0:{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}|UnitTestProjectTinhDiem\\UnitTestProjectTinhDiem.csproj|solutionrelative:unittestprojecttinhdiem\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}|WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsapptinhdiem\\windowsformsapptinhdiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{812B00B8-04DB-42E6-8BD4-3514CA4DEA31}|WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem.csproj|solutionrelative:windowsformsapptinhdiem\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}|UnitTestProjectTinhDiem\\UnitTestProjectTinhDiem.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\kiem thu phan mem\\windowsformsapptinhdiem\\unittestprojecttinhdiem\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9B7F9545-A47B-4D96-8CBE-5F8F9F6E2524}|UnitTestProjectTinhDiem\\UnitTestProjectTinhDiem.csproj|solutionrelative:unittestprojecttinhdiem\\testdata.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,13 +38,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "TestData.csv",
               "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\UnitTestProjectTinhDiem\\TestData.csv",
               "RelativeDocumentMoniker": "UnitTestProjectTinhDiem\\TestData.csv",
-              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\UnitTestProjectTinhDiem\\TestData.csv*",
-              "RelativeToolTip": "UnitTestProjectTinhDiem\\TestData.csv*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\UnitTestProjectTinhDiem\\TestData.csv",
+              "RelativeToolTip": "UnitTestProjectTinhDiem\\TestData.csv",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
               "WhenOpened": "2025-03-21T09:53:05.159Z",
               "EditorCaption": ""
@@ -57,7 +57,7 @@
               "RelativeDocumentMoniker": "UnitTestProjectTinhDiem\\UnitTest1.cs",
               "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\UnitTestProjectTinhDiem\\UnitTest1.cs",
               "RelativeToolTip": "UnitTestProjectTinhDiem\\UnitTest1.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBUAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T09:50:41.381Z",
               "EditorCaption": ""
@@ -70,14 +70,14 @@
               "RelativeDocumentMoniker": "WindowsFormsAppTinhDiem\\Form1.cs",
               "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem\\Form1.cs",
               "RelativeToolTip": "WindowsFormsAppTinhDiem\\Form1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwB4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowC4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T09:43:09.577Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\Kiem Thu Phan Mem\\WindowsFormsAppTinhDiem\\WindowsFormsAppTinhDiem\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsAppTinhDiem\\Form1.cs",

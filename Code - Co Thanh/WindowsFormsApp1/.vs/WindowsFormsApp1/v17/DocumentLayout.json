@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\",
+  "WorkspaceRootPath": "E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|solutionrelative:listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|solutionrelative:listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|e:\\t\u00E0i li\u1EC7u c\u1EE7a c\u01B0\u1EDDng\\new folder\\windowsformsapp1\\listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|solutionrelative:listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|e:\\schools\\code - co thanh\\windowsformsapp1\\listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E1EBA437-500F-4048-B6E7-9B3BA77ADE06}|listbox\\listbox.csproj|solutionrelative:listbox\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +18,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
-              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\listbox\\Form1.cs",
+              "DocumentMoniker": "E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\listbox\\Form1.cs",
               "RelativeDocumentMoniker": "listbox\\Form1.cs",
-              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\listbox\\Form1.cs",
+              "ToolTip": "E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\listbox\\Form1.cs",
               "RelativeToolTip": "listbox\\Form1.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAiwGEAAAA3AAAA",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAiwGEAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T13:20:22.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\listbox\\Form1.cs",
+              "DocumentMoniker": "E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\listbox\\Form1.cs",
               "RelativeDocumentMoniker": "listbox\\Form1.cs",
-              "ToolTip": "E:\\T\u00E0i Li\u1EC7u C\u1EE7a C\u01B0\u1EDDng\\New folder\\WindowsFormsApp1\\listbox\\Form1.cs [Design]",
+              "ToolTip": "E:\\Schools\\Code - Co Thanh\\WindowsFormsApp1\\listbox\\Form1.cs [Design]",
               "RelativeToolTip": "listbox\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-16T13:07:20.583Z",
               "EditorCaption": " [Design]"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 367,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

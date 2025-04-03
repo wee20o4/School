@@ -36,7 +36,7 @@ namespace CalculatorTester
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV",
                     @".\Data\KiemTraGiaoHauTest.csv", "KiemTraGiaoHauTest#csv", DataAccessMethod.Sequential)]
         [TestMethod]
-        public void TestKiemTraGiaoHau()
+        public void TestKiemTraGiaoNhau()
         {
             double diemTraiX1 = double.Parse(TestContext.DataRow[0].ToString());
             double diemTraiY1 = double.Parse(TestContext.DataRow[1].ToString());
