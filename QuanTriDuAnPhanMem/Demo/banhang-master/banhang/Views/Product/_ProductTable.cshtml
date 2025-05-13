@@ -1,0 +1,44 @@
+﻿@model IEnumerable<banhang.Models.Product>
+
+		<table class="table table-bordered" id="productTable">
+			<thead class="table-light">
+				<tr>
+					<th scope="col">Mã</th>
+					<th scope="col">Ảnh</th>
+					<th scope="col">Sản phẩm</th>
+					<th scope="col">Loại</th>
+					<th scope="col">Tồn kho</th>
+					<th scope="col">
+						<a asp-action="Index" asp-route-sortOrder="@(ViewBag.SortOrder == "asc" ? "desc" : "asc")">
+							Ngày khởi tạo
+						</a>
+					</th>
+				</tr>
+			</thead>
+	@foreach (var product in Model)
+	{
+				<tr>
+					<td>@product.ProductId</td>
+					<td><img src="@product.ImageUrl" alt="Hình ảnh" style="width: 100px; height: auto; object-fit: cover;"></td>
+					<td><a asp-action="ProductDetails" asp-route-id="@product.ProductId">@product.ProductName</a></td>
+						<td>@(product.Category?.CategoryName ?? "Không có danh mục")</td>
+					<td>@product.Stock</td>
+					<td>@product.CreatedAtProduct</td>
+				</tr>
+
+	}
+		</table>
+@if (ViewData["TotalPages"] != null && (int)ViewData["TotalPages"] > 1)
+{
+			<nav>
+				<ul class="pagination">
+			@for (int i = 1; i <= (int)ViewData["TotalPages"]; i++)
+			{
+								<li class="page-item @(i == (int)ViewData["CurrentPage"] ? "active" : "")">
+									<a class="page-link" href="#" onclick="searchProduct(@i)">@i</a>
+								</li>
+			}
+				</ul>
+			</nav>
+}
+

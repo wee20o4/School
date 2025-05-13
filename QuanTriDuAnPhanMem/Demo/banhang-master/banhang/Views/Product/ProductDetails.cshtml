@@ -1,0 +1,95 @@
+﻿@model banhang.Models.Product
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="row mb-2">
+            <i class="mdi mdi-arrow-left">
+                <a asp-action="Index" asp-controller="Product">Quay lại danh sách sản phẩm</a>
+            </i>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h3 class="page-title">Chi tiết sản phẩm</h3>
+            </div>
+        </div>
+
+            <!-- Thông tin chung -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4 class="mb-0">Thông tin chung</h4>
+                </div>
+                            <div class="card-body">
+                <div class="row">
+                    <!-- Cột thông tin sản phẩm -->
+                    <div class="col-md-4">
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Mã sản phẩm:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.ProductId</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Tên sản phẩm:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.ProductName</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">loại sản phẩm:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.Category?.CategoryName</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Mô tả sản phẩm:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.ProductDescription</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">                       
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Giá sản phẩm:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.Price</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Tồn kho:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.Stock</p>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="col-sm-4 col-form-label">Ngày khởi tạo:</label>
+                            <div class="col-sm-8">
+                                <p class="form-control-plaintext">@Model.CreatedAtProduct</p>
+                            </div>
+                        </div>                       
+                        <div class="d-flex gap-2">
+                            <a asp-action="EditProduct" asp-route-id="@Model.ProductId" 
+                               class="btn btn-warning btn-lg px-4 rounded-pill shadow">
+                                <i class="fas fa-edit"></i> Sửa
+                            </a>
+
+                            <form asp-action="DeleteProduct" asp-route-id="@Model.ProductId" method="post"
+                                  onsubmit="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?');"
+                                  style="display:inline;">
+                                <button type="submit" class="btn btn-danger btn-lg px-4 rounded-pill shadow">
+                                    <i class="fas fa-trash-alt"></i> Xóa
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="@Model.ImageUrl" alt="Hình ảnh sản phẩm" class="img-fluid" style="width:270px;height:260px;object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+
+
+

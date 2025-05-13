@@ -1,0 +1,55 @@
+﻿@model banhang.Models.Customer
+
+@{
+    ViewData["Title"] = "Thêm khách hàng";
+}
+
+<div class="page-wrapper">
+    <div class="container-fluid py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 mt-5">
+                <div class="card shadow-lg rounded-3">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h2 class="mb-0"><i class="bi bi-person-plus-fill"></i> Thêm khách hàng mới</h2>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Create" method="post" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label">Tên khách hàng</label>
+                                <input asp-for="CustomerName" class="form-control" placeholder="Nhập tên khách hàng" required />
+                                <span asp-validation-for="CustomerName" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Email</label>
+                                <input asp-for="CustomerEmail" class="form-control" type="email" placeholder="Nhập email" required />
+                                <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Số điện thoại</label>
+                                <input asp-for="CustomerPhone" class="form-control" type="tel" placeholder="Nhập số điện thoại" required />
+                                <span asp-validation-for="CustomerPhone" class="text-danger"></span>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">Địa chỉ</label>
+                                <input asp-for="CustomerAddress" class="form-control" placeholder="Nhập địa chỉ" required />
+                                <span asp-validation-for="CustomerAddress" class="text-danger"></span>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-success btn-lg">
+                                    <i class="bi bi-save"></i> Lưu
+                                </button>
+                                <a asp-action="Index" class="btn btn-secondary btn-lg">
+                                    <i class="bi bi-arrow-left-circle"></i> Quay lại
+                                </a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

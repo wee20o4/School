@@ -1,0 +1,105 @@
+﻿@model banhang.Models.Supplier
+
+@{
+    ViewData["Title"] = "Nhà Cung Cấp - " + Model.SupplierName;
+    var purchaseOrders = ViewBag.PurchaseOrders as List<banhang.Models.PurchaseOrder>;
+    decimal totalAmount = ViewBag.TotalAmount;
+}
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb" style="padding-top:100px">
+        <div class="container mt-4">
+            <h2>@Model.SupplierName</h2>
+
+            <div class="card mb-3">
+                <div class="card-header bg-light d-flex justify-content-between">
+                    <span>Thông tin cá nhân</span>
+                    <span class="badge bg-success">Đang giao dịch</span>
+                    <a asp-action="Edit" asp-route-id="@Model.SupplierId" class="btn btn-warning btn-sm">
+                        Chỉnh sửa
+                    </a>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Mã:</strong> @Model.SupplierId</p>
+                            <p><strong>Số điện thoại:</strong> @Model.Phone</p>
+                            <p><strong>Mã số Fax:</strong> @Model.FaxNumber</p>
+                        </div>
+                        <div class="col-md-6">                          
+                            <p><strong>Địa chỉ:</strong> @ViewBag.WardName, @ViewBag.DistrictName, @ViewBag.ProvinceName</p>
+                            <p><strong>Email:</strong> @Model.Email</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs mt-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#history" data-bs-toggle="tab">Lịch sử nhập hàng</a>
+                </li>
+            </ul>
+
+            <div class="tab-content mt-3">
+                <!-- Lịch sử nhập hàng -->
+                <div class="tab-pane fade show active" id="history">
+                    <div class="mb-3 d-flex justify-content-between">
+                        <input type="text" id="searchBox" class="form-control w-50" placeholder="Tìm kiếm đơn nhập hàng..." />
+                        <h5 class="text-danger">Tổng tiền đã nhập: @totalAmount.ToString("N0") đ</h5>
+                    </div>
+
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Mã đơn nhập</th>
+                                <th>Trạng thái</th>
+                                <th>Nhập kho</th>
+                                <th>Thanh toán</th>
+                                <th>Giá trị</th>
+                                <th>Ngày tạo đơn</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderTable">
+                            @if (purchaseOrders != null && purchaseOrders.Any())
+                            {
+                                foreach (var order in purchaseOrders)
+                                {
+                                    decimal totalOrderAmount = order.PurchaseOrderDetails
+                                        .Sum(pod => (pod.Product != null ? pod.Product.Price : 0) * pod.Quantity);
+
+                                            <tr>
+                                                <td>@order.PurchaseOrderId</td>
+                                                <td><span class="badge bg-success">Hoàn thành</span></td>
+                                                <td>✔</td>
+                                                <td>✔</td>
+                                                <td>@totalOrderAmount.ToString("N0") đ</td>
+                                                <td>@(order.PurchaseOrderDate.ToString("dd/MM/yyyy") ?? "-")</td>
+                                            </tr>
+                                }
+                            }
+                            else
+                            {
+                                    <tr>
+                                        <td colspan="7" class="text-center text-muted">Không có đơn nhập hàng nào</td>
+                                    </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+        <script>
+            document.getElementById("searchBox").addEventListener("keyup", function () {
+                var value = this.value.toLowerCase();
+                var rows = document.querySelectorAll("#orderTable tr");
+
+                rows.forEach(row => {
+                    row.style.display = row.innerText.toLowerCase().includes(value) ? "" : "none";
+                });
+            });
+        </script>
+}

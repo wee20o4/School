@@ -1,0 +1,40 @@
+﻿@model banhang.Models.ViewModel.ReturnOrderViewModel
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="container mt-4">
+            <h2>Yêu cầu đổi/trả hàng - Đơn #@Model.OrderId</h2>
+
+<form asp-controller="ReturnOrder" asp-action="ProcessReturn" method="post">
+    <input type="hidden" asp-for="OrderId" />
+    <input type="hidden" asp-for="CustomerId" />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Đã mua</th>
+                <th>Số lượng trả</th>
+            </tr>
+        </thead>
+        <tbody>
+                        @for (int i = 0; i < Model.Products.Count; i++)
+                        {
+                        <tr>
+                            <td>@Model.Products[i].ProductName</td>
+                            <td>@Model.Products[i].QuantityPurchased</td>
+                            <td>
+                                <input type="hidden" asp-for="Products[i].ProductId" />
+                                <input type="number" asp-for="Products[i].QuantityToReturn" min="0" max="@Model.Products[i].QuantityPurchased" class="form-control" />
+                            </td>
+                        </tr>
+                        }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Xác nhận đổi/trả</button>
+</form>
+
+<a asp-controller="Order" asp-action="Details" asp-route-id="@Model.OrderId" class="btn btn-secondary mt-2">Quay lại</a>
+        </div>
+    </div>
+</div>

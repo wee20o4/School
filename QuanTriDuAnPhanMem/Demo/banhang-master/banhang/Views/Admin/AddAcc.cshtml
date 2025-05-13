@@ -1,0 +1,162 @@
+﻿@model UserModel
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 mt-5">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Thêm người dùng</h3>
+                </div>
+                <div class="card-body">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+        <div class="alert alert-danger">
+            <strong>Lỗi!</strong> Vui lòng kiểm tra lại thông tin nhập vào.
+            <ul>
+                                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                {
+                        <li>@error.ErrorMessage</li>
+                                }
+            </ul>
+        </div>
+                    }
+
+                    <form method="post" enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label class="form-label">Tên đăng nhập:</label>
+                            <input type="text" class="form-control" asp-for="Username" required />
+                            <span asp-validation-for="Username" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Họ và Tên:</label>
+                            <input type="text" class="form-control" asp-for="FullName" required />
+                            <span asp-validation-for="FullName" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email:</label>
+                            <input type="email" class="form-control" asp-for="Email" required />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu:</label>
+                            <input type="password" class="form-control" asp-for="Password" required />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Giới tính:</label>
+                            <select class="form-select" asp-for="Gender">
+                                <option value="Male">Nam</option>
+                                <option value="Female">Nữ</option>
+                            </select>
+                            <span asp-validation-for="Gender" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Tỉnh/Thành phố:</label>
+                            <select class="form-select" asp-for="Province" id="provinceDropdown">
+                                <option value="">Chọn tỉnh/thành phố</option>
+                                            @if (ViewBag.Provinces != null)
+                                            {
+                                                @foreach (var province in ViewBag.Provinces)
+                                                {
+                            <option value="@province.Value">@province.Text</option>
+                                                }
+                                            }
+                                            else
+                                            {
+                    <option value="">Không có dữ liệu</option>
+                                            }
+                            </select>
+                            <span asp-validation-for="Province" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quận/Huyện:</label>
+                            <select class="form-select" asp-for="District" id="districtDropdown">
+                                <option value="">Chọn quận/huyện</option>
+                            </select>
+                            <span asp-validation-for="District" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phường/Xã:</label>
+                            <select class="form-select" asp-for="Ward" id="wardDropdown">
+                                <option value="">Chọn phường/xã</option>
+                            </select>
+                            <span asp-validation-for="Ward" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Ảnh đại diện:</label>
+                            <input type="file" class="form-control" name="ProfileImageFile" accept=".jpg,.jpeg,.png" />
+                            <span asp-validation-for="ProfileImageFile" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quyền:</label>
+                            <select class="form-select" asp-for="Role">
+                                <option value="User">User</option>
+                                <option value="Admin">Admin</option>
+                            </select>
+                            <span asp-validation-for="Role" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-success">Tạo tài khoản</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+            <script>
+            $(document).ready(function () {
+        $('#provinceDropdown').change(function () {
+            var provinceId = $(this).val();
+            $('#districtDropdown').html('<option value="">-- Chọn Quận/Huyện --</option>');
+            $('#wardDropdown').html('<option value="">-- Chọn Phường/Xã --</option>');
+
+            if (provinceId) {
+                $.ajax({
+                    url: '/Admin/GetDistricts',
+                    type: 'GET',
+                    data: { provinceId: provinceId },
+                    success: function (data) {
+                        $.each(data, function (index, item) {
+                            $('#districtDropdown').append('<option value="' + item.id + '">' + item.name + '</option>');
+                        });
+                    }
+                });
+            }
+        });
+
+        $('#districtDropdown').change(function () {
+            var districtId = $(this).val();
+            $('#wardDropdown').html('<option value="">-- Chọn Phường/Xã --</option>');
+
+            if (districtId) {
+                $.ajax({
+                    url: '/Admin/GetWards',
+                    type: 'GET',
+                    data: { districtId: districtId },
+                    success: function (data) {
+                        $.each(data, function (index, item) {
+                            $('#wardDropdown').append('<option value="' + item.id + '">' + item.name + '</option>');
+                        });
+                    }
+                });
+            }
+        });
+    });
+
+    </script>
+
+}

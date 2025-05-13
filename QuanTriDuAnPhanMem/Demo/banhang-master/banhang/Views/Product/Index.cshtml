@@ -1,0 +1,81 @@
+﻿@model IEnumerable<banhang.Models.Product>
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="container mt-4">
+            <h3 class="mb-3">Danh sách sản phẩm</h3>
+            <div class="d-flex justify-content-between mb-3">
+                <div>
+                    <button class="btn btn-outline-secondary" onclick="window.location.href='/Product/ExportToExcel'">Xuất file</button>
+                    <button class="btn btn-outline-secondary" id="btnImport">Nhập file</button>
+                </div>
+                <a asp-action="AddProduct" asp-controller="Product" class="btn btn-primary">Thêm sản phẩm</a>
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" id="searchInput" class="form-control" placeholder="Tìm kiếm theo ID hoặc tên sản phẩm">
+                <button class="btn btn-primary" id="btnSearch">Tìm kiếm</button>
+            </div>
+
+
+            <div id="productTable">
+                @await Html.PartialAsync("_ProductTable", Model)
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="importModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Nhập File Excel</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form id="importForm" asp-action="ImportFromExcel" asp-controller="Product" method="post" enctype="multipart/form-data">
+                    <input type="file" name="file" id="fileInput" class="form-control" accept=".xlsx, .xls" required />
+                    <button type="submit" class="btn btn-success mt-2">Tải lên</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $("#btnSearch").click(function () {
+        searchProduct(1);
+    });
+
+    $("#searchInput").keypress(function (e) {
+        if (e.which === 13) {
+            e.preventDefault(); 
+            searchProduct(1);
+        }
+    });
+
+    $("#btnImport").click(function () {
+        $("#importModal").modal("show");
+    });
+});
+
+function searchProduct(page) {
+    var keyword = $("#searchInput").val().trim();
+
+    $.ajax({
+        url: "/Product/Search",
+        type: "GET",
+        data: { keyword: keyword, page: page },
+        success: function (response) {
+            $("#productTable").html(response);
+        },
+        error: function (xhr, status, error) {
+            console.log("Lỗi AJAX:", status, error);
+        }
+    });
+}
+</script>

@@ -1,0 +1,46 @@
+﻿@model banhang.Models.Category
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="row mb-2">
+            <i class="mdi mdi-arrow-left">
+                <a asp-action="Index" asp-controller="Category">Quay lại danh sách loại sản phẩm</a>
+            </i>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <h3 class="page-title">Thêm sản phẩm</h3>
+            </div>
+        </div>
+
+        <form asp-action="AddCategory" method="post" enctype="multipart/form-data">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h4 class="mb-0">Thông tin chung</h4>
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label asp-for="CategoryName" class="col-md-3 col-form-label">Tên loại sản phẩm:</label>
+                        <div class="col-md-9">
+                            <input asp-for="CategoryName" class="form-control" placeholder="Nhập tên sản phẩm" />
+                            <span asp-validation-for="CategoryName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label asp-for="CategoryName" class="col-md-3 col-form-label">Mô tả loại sản phẩm:</label>
+                        <div class="col-md-9">
+                            <input asp-for="CategoryDescription" class="form-control" placeholder="Nhập mô tả loại sản phẩm" />
+                            <span asp-validation-for="CategoryDescription" class="text-danger"></span>
+                        </div>
+                    </div>
+
+
+            <div class="text-right">
+                <button type="submit" class="btn btn-primary" >Lưu sản phẩm</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,119 @@
+﻿@model IEnumerable<banhang.Models.Order>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb">
+        <div class="row align-items-center">
+            <div class="container mt-5">
+                <div class="row align-items-center mb-3">
+                    <div class="col-md-6">
+                        <h2 class="text-primary">Danh sách đơn hàng</h2>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <a href="@Url.Action("ExportOrders", "Order")" class="btn btn-success">
+                            Xuất Excel <i class="fas fa-file-excel"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Ô tìm kiếm -->
+                <div class="card p-3 mb-3" style="box-shadow: none;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" id="searchKeyword" class="form-control" placeholder="Tìm kiếm sản phẩm hoặc khách hàng">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="startDate" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="endDate" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100" id="searchOrders">Lọc</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bảng đơn hàng -->
+                <div class="card shadow p-3" id="orderTable">
+                    <table class="table table-hover table-bordered text-center">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Ngày đặt</th>
+                                <th>Khách hàng</th>
+                                <th>Tổng tiền</th>
+                                <th>Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody id="orderList">
+                            @foreach (var order in Model)
+                            {
+                                    <tr>
+                                        <td>@order.OrderId</td>
+                                        <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td>@(order.Customer != null ? order.Customer.CustomerName : "Khách lẻ")</td>
+                                        <td class="text-success fw-bold">@order.TotalAmount.ToString("N0") VND</td>
+                                        <td>
+                                            <a asp-action="Details" asp-route-id="@order.OrderId" class="btn btn-sm btn-info">Xem</a>
+                                        </td>
+                                    </tr>
+                            }
+                        </tbody>
+                    </table>
+
+                    <!-- Phân trang -->
+                    <div class="pagination justify-content-center" id="pagination">
+                        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                        {
+                                <a href="@Url.Action("Index", new { page = i })" class="btn btn-sm @((i == ViewBag.CurrentPage) ? "btn-primary" : "btn-light")">@i</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#searchOrders").click(function () {
+            let keyword = $("#searchKeyword").val();
+            let startDate = $("#startDate").val();
+            let endDate = $("#endDate").val();
+
+            $.ajax({
+                url: "/Order/Search",
+                type: "GET",
+                data: { search: keyword, startDate: startDate, endDate: endDate },
+                success: function (data) {
+                    let orderList = $("#orderList");
+                    orderList.empty();
+
+                    if (data.length === 0) {
+                        $("#orderTable").hide();  // Ẩn bảng nếu không có đơn hàng
+                        return;
+                    }
+
+                    $("#orderTable").show(); // Hiện bảng nếu có đơn hàng
+                    data.forEach(order => {
+                        orderList.append(`
+                            <tr>
+                                <td>${order.orderId}</td>
+                                <td>${new Date(order.orderDate).toLocaleDateString('vi-VN')}</td>
+                                <td>${order.customerName || "Khách lẻ"}</td>
+                                <td class="text-success fw-bold">${order.totalAmount.toLocaleString('vi-VN')} VND</td>
+                                <td><a href="/Order/Details/${order.orderId}" class="btn btn-sm btn-info">Xem</a></td>
+                            </tr>
+                        `);
+                    });
+                },
+                error: function (xhr) {
+                    console.error("Lỗi khi lấy đơn hàng:", xhr);
+                    alert("Có lỗi xảy ra, vui lòng thử lại.");
+                }
+            });
+        });
+    });
+</script>

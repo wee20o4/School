@@ -1,0 +1,95 @@
+﻿@model banhang.Models.Order
+
+<div class="page-wrapper">
+    <div class="page-breadcrumb" style="padding-top:100px">
+        <div class="row align-items-center">
+            <h2>Chi tiết đơn hàng #@Model.OrderId</h2>
+            <div class="mt-3">
+                <a asp-controller="ReturnOrder" asp-action="Create" asp-route-orderId="@Model.OrderId" class="btn btn-warning print-hide">
+                    <i class="fa fa-undo"></i> Đổi/Trả hàng
+                </a>
+            </div>
+
+
+            <p><strong>Ngày đặt:</strong> @Model.OrderDate.ToString("dd/MM/yyyy HH:mm")</p>
+            <p><strong>Khách hàng:</strong> @(Model.Customer != null ? Model.Customer.CustomerName : "Khách lẻ")</p>
+            <p><strong>Tổng tiền:</strong> @Model.TotalAmount.ToString("N0") VND</p>
+
+            <h3>Danh sách sản phẩm</h3>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Order_Details)
+                    {
+                                <tr>
+                                    <td>@item.Product.ProductName</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.UnitPrice.ToString("N0") VND</td>
+                                    <td>@((item.Quantity * item.UnitPrice).ToString("N0")) VND</td>
+                                </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Nút in hóa đơn -->
+            <div class="d-flex justify-content-end mt-3">
+                <button class="btn btn-primary print-hide" onclick="printInvoice()">In hóa đơn</button>
+            </div>
+
+            <a asp-action="Index" class="btn btn-secondary print-hide">Quay lại danh sách đơn hàng</a>
+        </div>
+    </div>
+</div>
+
+<script>
+function printInvoice() {
+    // Lưu trữ các phần tử layout để sau khi in xong có thể hiển thị lại
+    var header = document.querySelector(".topbar");
+    var sidebar = document.querySelector(".left-sidebar");
+    var footer = document.querySelector(".footer");
+    var pageWrapper = document.querySelector(".page-wrapper");
+
+    // Ẩn các phần không cần thiết khi in
+    if (header) header.style.display = "none";
+    if (sidebar) sidebar.style.display = "none";
+    if (footer) footer.style.display = "none";
+
+    // Ẩn các phần tử có class print-hide
+    var printHideElements = document.querySelectorAll('.print-hide');
+    printHideElements.forEach(function(element) {
+        element.style.display = "none";
+    });
+
+    // Căn giữa page-wrapper khi in
+    if (pageWrapper) {
+        pageWrapper.style.margin = "0 auto";  // Căn giữa
+        pageWrapper.style.maxWidth = "800px"; // Chiều rộng tối đa khi in
+    }
+
+    // In trang hiện tại
+    window.print();
+
+    // Sau khi in xong, hiển thị lại các phần đã ẩn
+    if (header) header.style.display = "block";
+    if (sidebar) sidebar.style.display = "block";
+    if (footer) footer.style.display = "block";
+
+    // Khôi phục lại kiểu dáng ban đầu của page-wrapper
+    if (pageWrapper) {
+        pageWrapper.style.margin = ""; // Khôi phục lại margin ban đầu
+        pageWrapper.style.maxWidth = ""; // Khôi phục lại max-width ban đầu
+    }
+
+    // Khôi phục lại các phần tử có class print-hide
+    printHideElements.forEach(function(element) {
+        element.style.display = "inline-block"; // Hoặc "block" tùy vào phần tử
+    });
+}
+</script>

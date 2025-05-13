@@ -1,0 +1,127 @@
+﻿@model banhang.Models.PurchaseOrder
+
+@{
+    ViewData["Title"] = "Chỉnh sửa đơn nhập hàng";
+}
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="container mt-4">
+            <h2 class="mb-4">Chỉnh sửa đơn nhập hàng</h2>
+
+            @if (TempData["ErrorMessage"] != null)
+            {
+                    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+            }
+
+            <form asp-action="EditPO" method="post">
+                <input type="hidden" asp-for="PurchaseOrderId" />
+
+                <div class="mb-3">
+                    <label class="form-label">Nhà cung cấp</label>
+                    <select class="form-control" asp-for="SupplierId" asp-items="ViewBag.Suppliers"></select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Ngày nhập hàng</label>
+                    <input type="date" class="form-control" asp-for="PurchaseOrderDate" />
+                </div>
+
+                <h4>Chi tiết sản phẩm</h4>
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-list">
+                        @foreach (var detail in Model.PurchaseOrderDetails)
+                        {
+                                <tr>
+                                    <td>
+                                        <select class="form-control product-select">
+                                        @foreach (var product in ViewBag.Products)
+                                        {
+                                                    <option value="@product.Value" selected="@(product.Value == detail.ProductId.ToString())">@product.Text</option>
+                                        }
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="number" class="form-control quantity-input" value="@detail.Quantity" min="1" />
+                                    </td>
+                                    <td>
+                                        <button type="button" class="btn btn-danger btn-sm remove-product">Xóa</button>
+                                    </td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <button type="button" class="btn btn-success" id="add-product">Thêm sản phẩm</button>
+
+                <input type="hidden" id="ProductIds" name="ProductIds" />
+                <input type="hidden" id="Quantities" name="Quantities" />
+
+                <div class="mt-3">
+                    <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
+                    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+        <script>
+            $(document).ready(function () {
+                function updateHiddenFields() {
+                    let productIds = [];
+                    let quantities = [];
+
+                    $("#product-list tr").each(function () {
+                        let productId = $(this).find(".product-select").val();
+                        let quantity = $(this).find(".quantity-input").val();
+
+                        if (productId && quantity) {
+                            productIds.push(productId);
+                            quantities.push(quantity);
+                        }
+                    });
+
+                    $("#ProductIds").val(productIds.join(","));
+                    $("#Quantities").val(quantities.join(","));
+                }
+
+                $("#add-product").click(function () {
+                    let newRow = `<tr>
+                        <td>
+                            <select class="form-control product-select">
+        @foreach (var product in ViewBag.Products)
+        {
+                                        <option value="@product.Value">@product.Text</option>
+        }
+                            </select>
+                        </td>
+                        <td>
+                            <input type="number" class="form-control quantity-input" value="1" min="1" />
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-danger btn-sm remove-product">Xóa</button>
+                        </td>
+                    </tr>`;
+
+                    $("#product-list").append(newRow);
+                });
+
+                $(document).on("click", ".remove-product", function () {
+                    $(this).closest("tr").remove();
+                });
+
+                $("form").submit(function () {
+                    updateHiddenFields();
+                });
+            });
+        </script>
+}

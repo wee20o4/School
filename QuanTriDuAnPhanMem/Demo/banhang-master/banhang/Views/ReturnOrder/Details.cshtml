@@ -1,0 +1,81 @@
+﻿@model banhang.Models.ReturnOrder
+
+@{
+    ViewData["Title"] = "Chi tiết đơn hoàn #" + Model.ReturnOrderId;
+}
+<div class="page-wrapper">
+    <div class="page-breadcrumb" >
+        <div class="row align-items-center">
+                <h2>Chi tiết đơn hoàn</h2>
+
+                <table class="table">
+                    <tr>
+                        <th>Mã đơn hoàn</th>
+                        <td>@Model.ReturnOrderId</td>
+                    </tr>
+                    <tr>
+                        <th>Mã đơn hàng</th>
+                        <td>@Model.OrderId</td>
+                    </tr>
+                    <tr>
+                        <th>Mã khách hàng</th>
+                        <td>@Model.CustomerId</td>
+                    </tr>
+                    <tr>
+                        <th>Ngày hoàn</th>
+                        <td>@Model.ReturnDate.ToString("dd/MM/yyyy HH:mm")</td>
+                    </tr>
+                    <tr>
+                        <th>Lý do hoàn</th>
+                        <td>@Model.Reason</td>
+                    </tr>
+                    <tr>
+                        <th>Tổng tiền hoàn</th>
+                        <td>@Model.TotalRefund.ToString("N0") VNĐ</td>
+                    </tr>
+                    <tr>
+                        <th>Trạng thái</th>
+                        <td>
+                            @if (Model.Status == 0)
+                            {
+                                    <span class="badge bg-warning">Chờ xử lý</span>
+                            }
+                            else if (Model.Status == 1)
+                            {
+                                    <span class="badge bg-success">Hoàn tất</span>
+                            }
+                            else
+                            {
+                                    <span class="badge bg-danger">Đã hủy</span>
+                            }
+                        </td>
+                    </tr>
+                </table>
+
+                <h3>Sản phẩm hoàn trả</h3>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Mã sản phẩm</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng hoàn</th>
+                            <th>Tiền hoàn</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ReturnOrderDetails)
+                        {
+                                <tr>
+                                    <td>@item.ProductId</td>
+                                    <td>@item.Product.ProductName</td>
+                                    <td>@item.Quantity</td>
+                                    <td>@item.RefundAmount.ToString("N0") VNĐ</td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    </div>
+</div>

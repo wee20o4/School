@@ -1,0 +1,114 @@
+﻿@model IEnumerable<banhang.Models.Customer>
+
+@{
+    ViewData["Title"] = "Danh sách khách hàng";
+    int currentPage = ViewBag.CurrentPage;
+    int totalPages = ViewBag.TotalPages;
+    int pageSize = ViewBag.PageSize;
+}
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="d-flex justify-content-between mb-3">
+            <h2>Danh sách khách hàng</h2>
+            <a asp-action="Create" class="btn btn-primary">Thêm khách hàng</a>
+        </div>
+
+        <!-- Ô tìm kiếm -->
+        <div class="mb-3">
+            <input type="text" id="customerSearch" class="form-control" placeholder="Tìm kiếm khách hàng...">
+        </div>
+
+<div class="table-responsive bg-white shadow-sm p-3 rounded">
+            <table class="table table-hover table-bordered">
+                <thead class="table-primary">
+                    <tr>
+                        <th>Tên khách hàng</th>
+                        <th>Email</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th class="text-center">Hành động</th>
+                    </tr>
+                </thead>
+                <tbody id="customerTableBody">
+                    @foreach (var customer in Model)
+                    {
+                            <tr id="row_@customer.CustomerId">
+                                <td>@customer.CustomerName</td>
+                                <td>@customer.CustomerEmail</td>
+                                <td>@customer.CustomerPhone</td>
+                                <td>@customer.CustomerAddress</td>
+                                <td class="text-center">
+                                    <a asp-action="Details" asp-route-id="@customer.CustomerId" class="btn btn-info btn-sm">Chi tiết</a>
+                                    <a asp-action="Edit" asp-route-id="@customer.CustomerId" class="btn btn-warning btn-sm">Sửa</a>
+                                    <button class="btn btn-danger btn-sm" onclick="deleteCustomer(@customer.CustomerId)">Xóa</button>
+                                </td>
+                            </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <!-- Phân trang -->
+        <div class="d-flex justify-content-center">
+            <nav>
+                <ul class="pagination">
+                    @if (currentPage > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage - 1, pageSize })">«</a>
+                        </li>
+                    }
+                    @for (int i = 1; i <= totalPages; i++)
+                    {
+                        <li class="page-item @(i == currentPage ? "active" : "")">
+                            <a class="page-link" href="@Url.Action("Index", new { page = i, pageSize })">@i</a>
+                        </li>
+                    }
+                    @if (currentPage < totalPages)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", new { page = currentPage + 1, pageSize })">»</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Hàm tìm kiếm khách hàng
+    document.getElementById("customerSearch").addEventListener("input", function () {
+        let searchTerm = this.value.toLowerCase();
+        let rows = document.querySelectorAll("#customerTableBody tr");
+
+        rows.forEach(row => {
+            let name = row.children[0].textContent.toLowerCase();
+            let email = row.children[1].textContent.toLowerCase();
+            let phone = row.children[2].textContent.toLowerCase();
+            let address = row.children[3].textContent.toLowerCase();
+
+            if (name.includes(searchTerm) || email.includes(searchTerm) || phone.includes(searchTerm) || address.includes(searchTerm)) {
+                row.style.display = "";
+            } else {
+                row.style.display = "none";
+            }
+        });
+    });
+
+    // Hàm xóa khách hàng bằng AJAX
+    function deleteCustomer(customerId) {
+        if (confirm("Bạn có chắc chắn muốn xóa khách hàng này không?")) {
+            fetch(`/Customer/Delete/${customerId}`, { method: "DELETE" })
+                .then(response => {
+                    if (response.ok) {
+                        alert("Xóa thành công!");
+                        document.getElementById(`row_${customerId}`).remove();
+                    } else {
+                        alert("Xóa thất bại! Khách hàng có thể đang liên kết với đơn hàng.");
+                    }
+                })
+                .catch(error => console.error("Lỗi:", error));
+        }
+    }
+</script>

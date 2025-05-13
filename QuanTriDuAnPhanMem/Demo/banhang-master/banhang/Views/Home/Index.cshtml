@@ -1,0 +1,392 @@
+﻿@model List<banhang.Models.ViewModel.RevenueViewModel>
+@using System.Text.Json
+<div class="page-wrapper">
+                <div class="page-breadcrumb" style="padding-top:20px">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-4 align-self-center">                       
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+
+                   <div class="container mt-4" style="border: 1px solid gray; border-radius:5px; margin-bottom: 30px; padding-top:10px">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h4>KẾT QUẢ KINH DOANH TRONG NGÀY</h4>
+                    </div>
+
+    <div class="row text-center">
+      <div class="col-md-4 mb-4">
+        <div class="card-stat blue">
+          <span class="icon">💰</span>
+          <div>
+            <div>Doanh thu</div>
+            <div id="today-revenue" style="font-size: 24px; font-weight: bold;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-stat green">
+          <span class="icon">📦</span>
+          <div>
+            <div>Đơn hàng mới</div>
+            <div style="font-size: 24px; font-weight: bold;">@ViewBag.TotalOrdersToday</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card-stat orange">
+          <span class="icon">↩️</span>
+          <div>
+            <div>Đơn trả hàng</div>
+            <div style="font-size: 24px; font-weight: bold;">@ViewBag.TotalReturnOrdersToday</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div>
+                                                <h3 class="card-title">Doanh thu bán hàng</h3>
+                                            </div>
+                                            <div class="ms-lg-auto mx-sm-auto mx-lg-0">
+                                            <select id="time-filter" class="form-select w-auto">
+                                                <option value="week">7 ngày qua</option>
+                                                <option value="month">Tháng này</option>
+                                                <option value="year">Năm nay</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="amp-pxl" style="height: 360px;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- Sales chart -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-4 col-xlg-3">
+                        <!-- Column -->
+                        <!-- Column -->
+                        <div class="card">
+                            <div class="card-body bg-info">
+                                <h4 class="text-white card-title">Hoạt động gần đây</h4>
+                            </div>
+                            <div class="card-body">
+                                <div class="list-group">
+                                            @if (ViewBag.LastLoggedInUser != null)
+                                            {
+                                            <div class="list-group-item list-group-item-success">
+                                                <b>@ViewBag.LastLoggedInUser</b> vừa đăng nhập
+                                            </div>
+                                            }
+
+                                            @if (ViewBag.ActivityLogs != null && ViewBag.ActivityLogs.Count > 0)
+                                            {
+                                                @foreach (var log in ViewBag.ActivityLogs)
+                                                {
+                                                    <div class="list-group-item">
+                                                        <b>@log.UserName</b> vừa @log.Action <b>@log.Reference</b> 
+                                                        <span class="text-muted float-end">@log.Timestamp.ToString("dd/MM/yyyy HH:mm:ss")</span>
+                                                    </div>
+                                                }
+                                            }
+                                            else
+                                            {
+                                            <div class="list-group-item text-center text-muted">
+                                                Không có hoạt động nào gần đây.
+                                            </div>
+                                            }
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-xlg-9">
+                        <div class="card">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs profile-tab" role="tablist">
+                                <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#het"
+                                        role="tab">Thông tin kho</a>
+                                </li>
+                                <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#sell"
+                                        role="tab">Hàng bán chạy</a> </li>
+                                <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#care"
+                                        role="tab">Có thể bạn quan tâm</a>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="het" role="tabpanel">
+                                    <div class="card-body">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Tên sản phẩm</th>
+                                                    <th>Số lượng tồn kho</th> 
+                                                </tr>
+                                            </thead>
+                                           <tbody>
+                                        @if (ViewBag.Inventory != null)
+                                        {
+                                            int index = 1;
+                                            foreach (var item in ViewBag.Inventory) // Không cần Take(10) nữa
+                                            {
+                                                <tr>
+                                                    <td>@index</td>
+                                                    <td>@item.ProductName</td>
+                                                    <td>@item.StockQuantity</td> 
+                                                </tr>
+                                                                                index++;
+                                            }
+                                        }
+
+                                                </tbody>
+
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--second tab-->
+                                <div class="tab-pane" id="sell" role="tabpanel">
+                                    <div class="card-body">
+                                            <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Tên sản phẩm</th>
+                                                    <th>Số lượng đã bán</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    @if (ViewBag.TopProducts != null)
+                                                    {
+                                                        int index = 1;
+                                                        foreach (var item in ViewBag.TopProducts)
+                                                        {
+                                            <tr>
+                                                <td>@index</td>
+                                                <td>@item.ProductName</td>
+                                                <td>@item.TotalSold</td>
+                                            </tr>
+                                                            index++;
+                                                        }
+                                                    }
+                                                </tbody>
+                                            </table>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="care" role="tabpanel">
+                                    <div class="card-body">
+                                        <div class="profiletimeline border-start-0">
+                                            <div class="sl-item">
+                                                <div class="sl-left">
+                                                    <img src="https://via.placeholder.com/40" alt="icon" class="img-circle">
+                                                </div>
+                                                <div class="sl-right">
+                                                    <div>
+                                                        <a href="#" class="link fw-bold">VPBank tung gói vay tín chấp ưu đãi 1 tỷ đồng cho nhà bán hàng Sapo</a>
+                                                        <p class="text-muted">Vay tín chấp VPBank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr>
+                                            <div class="sl-item">
+                                                <div class="sl-left">
+                                                    <img src="https://via.placeholder.com/40" alt="icon" class="img-circle">
+                                                </div>
+                                                <div class="sl-right">
+                                                    <div>
+                                                        <a href="#" class="link fw-bold">VPBank tung gói vay tín chấp ưu đãi 1 tỷ đồng cho nhà bán hàng Sapo</a>
+                                                        <p class="text-muted">Vay tín chấp VPBank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="sl-item">
+                                                <div class="sl-left">
+                                                    <img src="https://via.placeholder.com/40" alt="icon" class="img-circle">
+                                                </div>
+                                                <div class="sl-right">
+                                                    <div>
+                                                        <a href="#" class="link fw-bold">VPBank tung gói vay tín chấp ưu đãi 1 tỷ đồng cho nhà bán hàng Sapo</a>
+                                                        <p class="text-muted">Vay tín chấp VPBank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="sl-item">
+                                                <div class="sl-left">
+                                                    <img src="https://via.placeholder.com/40" alt="icon" class="img-circle">
+                                                </div>
+                                                <div class="sl-right">
+                                                    <div>
+                                                        <a href="#" class="link fw-bold">VPBank tung gói vay tín chấp ưu đãi 1 tỷ đồng cho nhà bán hàng Sapo</a>
+                                                        <p class="text-muted">Vay tín chấp VPBank</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!---->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- footer -->
+                <!-- ============================================================== -->
+                <!-- ============================================================== -->
+                <!-- End footer -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+        <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/chartist-plugin-tooltips/latest/chartist-plugin-tooltip.min.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var response = @Html.Raw(Json.Serialize(Model)); // Convert Model thành JSON
+    console.log(response); // 📌 Kiểm tra dữ liệu JSON có đúng không
+
+    var today = new Date().toLocaleDateString("en-GB").slice(0, 5); // Lấy ngày tháng hiện tại (dd/MM)
+    var todayRevenue = response
+        .filter(item => item.date === today) // Lọc doanh thu của ngày hôm nay
+        .reduce((sum, item) => sum + item.totalSales, 0); // Tính tổng doanh thu
+
+    document.getElementById("today-revenue").innerText = `${todayRevenue.toLocaleString()} VND`;
+
+    function getDatesInRange(startDate, endDate) {
+        let dates = [];
+        let currentDate = new Date(startDate);
+        while (currentDate <= endDate) {
+            dates.push(currentDate.toLocaleDateString("en-GB").slice(0, 5)); // Giữ nguyên định dạng dd/MM
+            currentDate.setDate(currentDate.getDate() + 1);
+        }
+        return dates;
+    }
+
+    function getLast7Days(date) {
+        let d = new Date(date);
+        d.setDate(d.getDate() - 6); // Lấy ngày cách đây 6 ngày
+        return d;
+    }
+
+    function getStartOfMonth(date) {
+        let d = new Date(date);
+        d.setDate(1);
+        return d;
+    }
+
+    function getStartOfYear(date) {
+        let d = new Date(date);
+        d.setMonth(0, 1); // Bắt đầu từ 1/1 của năm đó
+        return d;
+    }
+
+    function updateChart(filterType) {
+        let startDate, endDate;
+        let todayDate = new Date();
+
+        if (filterType === "week") {
+            startDate = getLast7Days(todayDate);
+            endDate = todayDate;
+        } else if (filterType === "month") {
+            startDate = getStartOfMonth(todayDate);
+            endDate = todayDate;
+        } else {
+            startDate = getStartOfYear(todayDate);
+            endDate = todayDate;
+        }
+
+        if (filterType === "year") {
+            // Xử lý dữ liệu theo tháng (01 - 12)
+            let salesData = {};
+            for (let i = 1; i <= 12; i++) {
+                salesData[i] = 0; // Khởi tạo doanh thu mỗi tháng = 0
+            }
+
+            response.forEach(item => {
+                let dateParts = item.date.split("/"); // Lấy ngày từ dd/MM
+                let month = parseInt(dateParts[1]); // Lấy tháng
+                salesData[month] += item.totalSales; // Cộng dồn doanh thu
+            });
+
+            var labels = Object.keys(salesData).map(m => `Tháng ${m}`); // "Tháng 1", "Tháng 2", ...
+            var series = [Object.values(salesData)]; // Tổng doanh thu từng tháng
+        } else {
+            // Xử lý dữ liệu theo ngày (7 ngày qua hoặc tháng này)
+            let allDates = getDatesInRange(startDate, endDate);
+            let salesData = {};
+
+            allDates.forEach(date => {
+                salesData[date] = 0;
+            });
+
+            response.forEach(item => {
+                if (salesData.hasOwnProperty(item.date)) {
+                    salesData[item.date] = item.totalSales;
+                }
+            });
+
+            var labels = Object.keys(salesData);
+            var series = [Object.values(salesData)];
+        }
+
+        console.log(labels, series); // Kiểm tra dữ liệu trước khi đưa vào biểu đồ
+
+        // Cập nhật biểu đồ
+        new Chartist.Bar('.amp-pxl', {
+            labels: labels,
+            series: series
+        }, {
+            axisX: {
+                position: 'end',
+                showGrid: false
+            },
+            axisY: {
+                    position: 'start',
+                    labelInterpolationFnc: function(value) {
+                        if (value >= 1000000) return (value / 1000000) + 'M';
+                        if (value >= 1000) return (value / 1000) + 'K';
+                        return value;
+                    },
+                    onlyInteger: true
+                },            
+                plugins: [
+                Chartist.plugins.tooltip()
+            ]
+        });
+    }
+
+    // Load biểu đồ mặc định là "7 ngày qua"
+    updateChart("week");
+
+    // Lắng nghe sự kiện thay đổi dropdown
+    document.getElementById("time-filter").addEventListener("change", function () {
+        updateChart(this.value);
+    });
+});
+</script>

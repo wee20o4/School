@@ -1,0 +1,143 @@
+﻿    @model IEnumerable<banhang.Models.Category>
+
+    <div class="page-wrapper">
+        <div class="page-breadcrumb" style="padding-top:70px">
+            <div class="row align-items-center">
+                <h3 class="mb-3">Danh sách loại sản phẩm</h3>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <button class="btn btn-outline-secondary" onclick="window.location.href='/Category/ExportToExcel'">Xuất file</button>
+                        <button class="btn btn-outline-secondary" id="btnOpenImportModal">Nhập loại sản phẩm</button>
+                    </div>
+                    <a asp-action="AddCategory" asp-controller="Category" class="btn btn-primary">Thêm loại sản phẩm</a>
+                </div>
+
+                <div class="card p-3 mb-3" style="box-shadow: none;">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input type="text" id="searchCategoryInput" class="form-control" placeholder="Tìm kiếm theo tên danh mục">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="startDate" class="form-control">
+                        </div>
+                        <div class="col-md-3">
+                            <input type="date" id="endDate" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-primary w-100" id="searchCategoryBtn">Lọc</button>
+                        </div>
+                    </div>
+                </div>
+
+                <table class="table table-bordered">
+                    <thead class="table-light">
+                        <tr>
+                            <th scope="col" class="col-md-2">Mã danh mục</th>
+                            <th scope="col" class="col-md-4">Tên danh mục</th>
+                            <th scope="col" class="col-md-3">Ngày khởi tạo</th>
+                            <th scope="col" class="col-md-3 text-center">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody id="categoryList">
+                        @foreach (var category in Model)
+                        {
+                                <tr>
+                                    <td>@category.CategoryId</td>
+                                    <td>@category.CategoryName</td>
+                                    <td>@category.CreatedAtCategory.ToString("dd/MM/yyyy")</td>
+                                    <td class="text-center">
+                                        <a asp-action="EditCategory" asp-controller="Category" asp-route-id="@category.CategoryId" class="btn btn-warning btn-sm">Sửa</a>
+                                        <a asp-action="DeleteCategory" asp-controller="Category" asp-route-id="@category.CategoryId" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                                    </td>
+                                </tr>
+                        }
+                    </tbody>
+                </table>
+                <!-- Phân trang -->
+                <div class="pagination justify-content-center" id="pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal nhập file -->
+    <div id="importCategoryModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nhập File Excel - Loại Sản Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="importCategoryForm" asp-action="ImportFromExcelCategory" asp-controller="Category" method="post" enctype="multipart/form-data">
+                        <input type="file" name="file" id="fileCategoryInput" class="form-control" accept=".xlsx, .xls" required />
+                        <button type="submit" class="btn btn-success mt-2">Tải lên</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btnOpenImportModal").click(function () {
+                $("#importCategoryModal").modal("show");
+            });
+        });
+
+         $(document).ready(function () {
+            loadCategories(1); // Gọi lần đầu để hiển thị dữ liệu
+
+            $("#searchCategoryBtn").click(function () {
+                loadCategories(1); // Tải dữ liệu theo bộ lọc
+            });
+        });
+
+        function loadCategories(page) {
+            let keyword = $("#searchCategoryInput").val();
+            let startDate = $("#startDate").val();
+            let endDate = $("#endDate").val();
+
+            $.ajax({
+                url: "/Category/SearchCategory",
+                type: "GET",
+                data: { search: keyword, startDate: startDate, endDate: endDate, page: page },
+                success: function (response) {
+                    let categoryList = $("#categoryList");
+                    let pagination = $("#pagination");
+                    categoryList.empty();
+                    pagination.empty();
+
+                    if (response.totalPages > 1) {
+                        for (let i = 1; i <= response.totalPages; i++) {
+                            pagination.append(`<button class="btn btn-sm ${i === response.currentPage ? 'btn-primary' : 'btn-light'} mx-1" onclick="loadCategories(${i})">${i}</button>`);
+                        }
+                    }
+
+                    response.categories.forEach(category => {
+                        categoryList.append(`
+                            <tr>
+                                <td>${category.categoryId}</td>
+                                <td>${category.categoryName}</td>
+                                <td>${category.createdAt}</td>
+                                <td class="text-center">
+                                    <a href="/Category/EditCategory/${category.categoryId}" class="btn btn-warning btn-sm">Sửa</a>
+                                    <a href="/Category/DeleteCategory/${category.categoryId}" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                                </td>
+                            </tr>
+                        `);
+                    });
+
+                    // Tạo phân trang
+                    for (let i = 1; i <= response.totalPages; i++) {
+                        pagination.append(`<button class="btn btn-sm ${i === response.currentPage ? 'btn-primary' : 'btn-light'}" onclick="loadCategories(${i})">${i}</button>`);
+                    }
+                },
+                error: function (xhr) {
+                    console.error("Lỗi khi tìm kiếm:", xhr);
+                    alert("Có lỗi xảy ra, vui lòng thử lại.");
+                }
+            });
+        }
+    </script>

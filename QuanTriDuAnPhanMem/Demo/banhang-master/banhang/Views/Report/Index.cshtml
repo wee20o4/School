@@ -1,0 +1,208 @@
+﻿@{
+    ViewData["Title"] = "Báo Cáo POS";
+    var jsonData = ViewBag.RevenueReport != null ? System.Text.Json.JsonSerializer.Serialize(ViewBag.RevenueReport) : "[]";
+}
+<div class="page-wrapper">
+    <div class="page-breadcrumb" style="padding-top:50px">
+        <div class="container mt-4">
+            <div class="card shadow-sm p-3 mb-4">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2 class="text-primary">📊 Báo Cáo Hệ Thống POS</h2>
+                        <select id="filterType" class="form-select w-auto">
+                            <option value="week" selected="@(ViewBag.FilterType == "week" ? "selected" : null)">Tuần</option>
+                            <option value="month" selected="@(ViewBag.FilterType == "month" ? "selected" : null)">Tháng</option>
+                            <option value="year" selected="@(ViewBag.FilterType == "year" ? "selected" : null)">Năm</option>
+                        </select>
+                        <button id="exportExcelBtn" class="btn btn-success">
+                            <i class="fas fa-file-excel"></i> Xuất Excel
+                        </button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card shadow-sm p-3">
+                        <h4 class="text-success">📊 Doanh Thu</h4>
+                        <canvas id="revenueChart"></canvas>
+                        <div id="revenueTableContainer"></div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm p-3 mb-3">
+                        <h4 class="text-warning"><i class="fas fa-file-invoice"></i> Báo Cáo Đơn Hàng</h4>
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between"><span>Tổng đơn:</span> <strong>@ViewBag.TotalOrders</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Đơn hoàn trả:</span> <strong>@ViewBag.TotalReturns</strong></li>
+                            <li class="list-group-item d-flex justify-content-between"><span>Đơn hoàn tất:</span> <strong>@ViewBag.TotalCompletedOrders</strong></li>
+                        </ul>
+                    </div>
+                    <div class="card shadow-sm p-3">
+                        <h4 class="text-danger"><i class="fas fa-fire"></i> Top 5 Sản Phẩm Bán Chạy</h4>
+                        <ul class="list-group">
+                            @if (ViewBag.TopSellingProducts != null && ViewBag.TopSellingProducts.Count > 0)
+                            {
+                                foreach (var product in ViewBag.TopSellingProducts)
+                                {
+                                            <li class="list-group-item d-flex justify-content-between align-items-center">
+                                                <span>@product.ProductName</span> 
+                                                <span class="badge bg-success fs-6">@product.TotalSold sp</span>
+                                            </li>
+                                }
+                            }
+                            else
+                            {
+                                    <li class="list-group-item text-muted">Không có dữ liệu.</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="text-danger">⚠️ Sản phẩm tồn kho thấp (Dưới 5)</h5>
+
+                            <a href="@Url.Action("ExportLowStockProducts", "Report")" class="btn btn-success">
+                                <i class="fas fa-file-excel"></i> Xuất Excel
+                            </a>
+                        </div>
+                        <ul class="list-group">
+                            @if (ViewBag.LowStockProducts != null && ViewBag.LowStockProducts.Count > 0)
+                            {
+                                foreach (var product in ViewBag.LowStockProducts)
+                                {
+                                            <li class="list-group-item d-flex justify-content-between">
+                                                <span>@product.ProductName</span> 
+                                                <span class="badge bg-danger">@product.Stock sp</span>
+                                            </li>
+                                }
+                            }
+                            else
+                            {
+                                    <li class="list-group-item text-muted">Không có dữ liệu.</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm p-3">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h5 class="text-primary">📦 Sản phẩm tồn kho vượt mức</h5>
+                                    <a href="@Url.Action("ExportHighStockProducts", "Report")" class="btn btn-success">
+                                <i class="fas fa-file-excel"></i> Xuất Excel
+                            </a>
+                        </div>
+
+                        <ul class="list-group">
+                            @if (ViewBag.HighStockProducts != null && ViewBag.HighStockProducts.Count > 0)
+                            {
+                                foreach (var product in ViewBag.HighStockProducts)
+                                {
+                                            <li class="list-group-item d-flex justify-content-between">
+                                                <span>@product.ProductName</span> 
+                                                <span class="badge bg-primary">@product.Stock sp</span>
+                                            </li>
+                                }
+                            }
+                            else
+                            {
+                                    <li class="list-group-item text-muted">Không có dữ liệu.</li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    var ctx = document.getElementById('revenueChart').getContext('2d');
+    var revenueData = @Html.Raw(jsonData);
+
+    if (!Array.isArray(revenueData)) {
+        console.error("Dữ liệu doanh thu không hợp lệ");
+        revenueData = [];
+    }
+
+    function updateChart(filterType) {
+        let labels = [], salesData = [];
+
+        let groupedData = revenueData.reduce((acc, item) => {
+            let date = new Date(item.Date);
+            if (!isNaN(date.getTime())) {
+                let key;
+                switch (filterType) {
+                    case "day":
+                        key = date.toLocaleDateString("vi-VN");
+                        break;
+                    case "week":
+                        key = `Tuần ${getWeekNumber(date)}`;
+                        break;
+                    case "month":
+                        key = `Tháng ${date.getMonth() + 1}`;
+                        break;
+                    case "year":
+                        key = `Năm ${date.getFullYear()}`;
+                        break;
+                    default:
+                        key = date.toLocaleDateString("vi-VN");
+                }
+                acc[key] = (acc[key] || 0) + item.TotalSales;
+            }
+            return acc;
+        }, {});
+
+        labels = Object.keys(groupedData);
+        salesData = Object.values(groupedData);
+
+        if (window.myChart instanceof Chart) {
+            window.myChart.destroy();
+        }
+
+        window.myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Doanh thu (VNĐ)',
+                    data: salesData,
+                    backgroundColor: 'rgba(75, 192, 192, 0.5)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    }
+
+    function getWeekNumber(date) {
+        let firstDayOfYear = new Date(date.getFullYear(), 0, 1);
+        let pastDaysOfYear = (date - firstDayOfYear) / 86400000;
+        return Math.ceil((pastDaysOfYear + firstDayOfYear.getDay() + 1) / 7);
+    }
+
+    function exportExcel() {
+        let filterType = document.getElementById("filterType").value;
+        window.location.href = `/Report/ExportRevenueReport?filterType=${filterType}`;
+    }
+
+    document.getElementById("filterType").addEventListener("change", function () {
+        updateChart(this.value);
+    });
+
+    document.getElementById("exportExcelBtn").addEventListener("click", function () {
+        exportExcel();
+    });
+
+    updateChart("week");
+});
+</script>

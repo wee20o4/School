@@ -1,0 +1,40 @@
+﻿@model List<UserModel>
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 100px;">
+        <div class="row mb-2">
+            <div class="card shadow p-4 w-100" style="border-radius: 12px; background: #f8f9fc;">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h2  style="color: #00bcd4;">Quản lý người dùng</h2>
+                    <a href="@Url.Action("AddAcc", "Admin")" class="btn" style="background-color: #00bcd4; color: white; border-radius: 8px;">
+                        <i class="bi bi-plus-lg"></i> Thêm người dùng
+                    </a>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover" style="border-radius: 10px; overflow: hidden;">
+                        <thead style="background: #00bcd4; color: white;">
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên đăng nhập</th>
+                                <th>Quyền</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in Model)
+                            {
+                                    <tr style="background: #ffffff; border-bottom: 1px solid #e0e0e0;">
+                                            <td><a asp-action="Edit" asp-route-id="@user.Id">@user.Id</a></td>
+                                        <td>@user.Username</td>
+                                        <td>
+                                            <span class="badge" style="background: #007bff; color: white; padding: 5px 10px; border-radius: 6px;">@user.Role</span>
+                                        </td>
+                                    </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

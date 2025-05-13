@@ -1,0 +1,113 @@
+﻿@model IEnumerable<banhang.Models.Supplier>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<div class="page-wrapper">
+    <div class="container-fluid" style="padding-top: 50px;">
+        <div class="container mt-4">
+            <h3 class="mb-3">Danh sách nhà cung cấp</h3>
+
+            <!-- Tìm kiếm -->
+           <div class="card p-3 mb-3">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="input-group">
+                <input type="text" id="searchKeyword" class="form-control" placeholder="Tìm kiếm">
+                <button class="btn btn-primary" id="searchSuppliers">Tìm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="card shadow p-3">
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center">
+            <thead class="table-primary">
+                <tr>
+                    <th>ID</th>
+                    <th>Tên nhà cung cấp</th>
+                    <th>Số điện thoại</th>
+                    <th>Email</th>
+                    <th>Fax</th>
+                    <th>Địa chỉ</th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                            @foreach (var supplier in Model)
+                            {
+                        <tr>
+                            <td>@supplier.SupplierId</td>
+                            <td><a asp-action="Detail" asp-controller="Suppliers" asp-route-id="@supplier.SupplierId">@supplier.SupplierName</a></td>
+                            <td>@supplier.Phone</td>
+                            <td>@supplier.Email</td>
+                            <td>@supplier.FaxNumber</td>
+                            <td>@supplier.Province</td>
+                            <td>@(supplier.Status ? "Hoạt động" : "Ngừng hoạt động")</td>
+                            <td>
+                                <a href="/Suppliers/Edit/@supplier.SupplierId" class="btn btn-warning btn-sm">Sửa</a>
+                                <a href="/Suppliers/Delete/@supplier.SupplierId" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa?');">Xóa</a>
+                            </td>
+                        </tr>
+                            }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+            <!-- Phân trang -->
+            <div class="pagination justify-content-center" id="pagination">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                        <a href="javascript:void(0)" class="btn btn-sm @(i == ViewBag.CurrentPage ? "btn-primary" : "btn-light")" onclick="searchSuppliers(@i)">@i</a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $("#searchSuppliers").click(function () {
+            searchSuppliers(1);
+        });
+    });
+
+    function searchSuppliers(page) {
+        let keyword = $("#searchKeyword").val();
+
+        $.ajax({
+            url: "/Suppliers/Search",
+            type: "GET",
+            data: { search: keyword, page: page },
+            success: function (data) {
+                let supplierList = $("#supplierList");
+                supplierList.empty();
+
+                if (data.suppliers.length === 0) {
+                    supplierList.append(`<tr><td colspan="8" class="text-center">Không tìm thấy nhà cung cấp</td></tr>`);
+                    return;
+                }
+
+                data.suppliers.forEach(supplier => {
+                    supplierList.append(`
+                        <tr>
+                            <td>${supplier.supplierId}</td>
+                            <td><a href="/Suppliers/Detail/${supplier.supplierId}">${supplier.supplierName}</a></td>
+                            <td>${supplier.phone}</td>
+                            <td>${supplier.email}</td>
+                            <td>${supplier.faxNumber}</td>
+                            <td>${supplier.province}</td>
+                            <td>${supplier.status ? "Hoạt động" : "Ngừng hoạt động"}</td>
+                            <td>
+                                <a href="/Suppliers/Edit/${supplier.supplierId}" class="btn btn-warning btn-sm">Sửa</a>
+                                <a href="/Suppliers/Delete/${supplier.supplierId}" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xóa?');">Xóa</a>
+                            </td>
+                        </tr>
+                    `);
+                });
+            }
+        });
+    }
+</script>
