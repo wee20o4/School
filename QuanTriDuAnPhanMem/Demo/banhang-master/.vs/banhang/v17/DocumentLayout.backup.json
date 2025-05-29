@@ -3,24 +3,35 @@
   "WorkspaceRootPath": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\repository\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\repository\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\banhang.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\banhang.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\nmcuo\\.nuget\\packages\\epplus\\8.0.3\\readme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\controllers\\stockcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|e:\\school\\quantriduanphanmem\\demo\\banhang-master\\banhang\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B130CC-DC4E-4369-9C9F-76A48EE1EE36}|banhang\\banhang.csproj|solutionrelative:banhang\\models\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,51 +41,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Repository\\DataContext.cs",
-              "RelativeDocumentMoniker": "banhang\\Repository\\DataContext.cs",
-              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Repository\\DataContext.cs*",
-              "RelativeToolTip": "banhang\\Repository\\DataContext.cs*",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T06:03:48.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Program.cs",
-              "RelativeDocumentMoniker": "banhang\\Program.cs",
-              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Program.cs",
-              "RelativeToolTip": "banhang\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-13T05:58:10.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\appsettings.json",
-              "RelativeDocumentMoniker": "banhang\\appsettings.json",
-              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\appsettings.json",
-              "RelativeToolTip": "banhang\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-13T05:57:55.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
@@ -86,6 +54,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "banhang\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Properties\\launchSettings.json",
+              "RelativeToolTip": "banhang\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-14T03:49:25.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "readme.txt",
+              "DocumentMoniker": "C:\\Users\\nmcuo\\.nuget\\packages\\epplus\\8.0.3\\readme.txt",
+              "ToolTip": "C:\\Users\\nmcuo\\.nuget\\packages\\epplus\\8.0.3\\readme.txt",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-05-14T03:45:44.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "banhang.csproj",
+              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\banhang.csproj",
+              "RelativeDocumentMoniker": "banhang\\banhang.csproj",
+              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\banhang.csproj",
+              "RelativeToolTip": "banhang\\banhang.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-14T03:43:31.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Repository\\DataContext.cs",
+              "RelativeDocumentMoniker": "banhang\\Repository\\DataContext.cs",
+              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Repository\\DataContext.cs",
+              "RelativeToolTip": "banhang\\Repository\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T06:03:48.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Program.cs",
+              "RelativeDocumentMoniker": "banhang\\Program.cs",
+              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Program.cs",
+              "RelativeToolTip": "banhang\\Program.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-13T05:58:10.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\appsettings.json",
+              "RelativeDocumentMoniker": "banhang\\appsettings.json",
+              "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\appsettings.json",
+              "RelativeToolTip": "banhang\\appsettings.json",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-13T05:57:55.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Stock.cs",
               "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Models\\Stock.cs",
               "RelativeDocumentMoniker": "banhang\\Models\\Stock.cs",
@@ -93,20 +134,23 @@
               "RelativeToolTip": "banhang\\Models\\Stock.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-03T17:02:27.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T17:02:27.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "StockController.cs",
               "DocumentMoniker": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Controllers\\StockController.cs",
               "RelativeDocumentMoniker": "banhang\\Controllers\\StockController.cs",
               "ToolTip": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\Controllers\\StockController.cs",
               "RelativeToolTip": "banhang\\Controllers\\StockController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-03T17:02:14.176Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         },

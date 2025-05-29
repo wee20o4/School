@@ -18,7 +18,9 @@ namespace banhang.Migrations
                 nullable: true,
                 oldClrType: typeof(string),
                 oldType: "nvarchar(max)");
-            migrationBuilder.DropPrimaryKey(name: "PK_OrderDetails", table: "OrderDetails");
+            migrationBuilder.DropPrimaryKey(
+    name: "PK_OrderDetails",
+    table: "OrderDetails");
             // Tạo cột mới với Identity
             migrationBuilder.AddColumn<int>(
                 name: "NewODId",

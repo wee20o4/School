@@ -48,10 +48,9 @@
     </style>
 </head>
 <body>
-    <div class="page-wrapper">
-        <div class="page-breadcrumb" style="padding-top:20px">
-            <div class="row align-items-center">
-
+<div class="page-wrapper"/>
+<div class="page-breadcrumb" style="padding-top:20px">
+    <div class="row align-items-center"/>
     <div class="invoice" id="invoice">
         <div class="invoice-header">
             <h2>Cửa hàng DUCVIPPro</h2>
@@ -59,41 +58,48 @@
             <p>Điện thoại: 0374 151 451</p>
             <h3>HÓA ĐƠN THANH TOÁN</h3>
         </div>
-        <p>Mã đơn: <span id="orderId">#@Model.OrderId</span></p>
-        <p>Ngày: <span id="orderDate">@Model.OrderDate</span></p>
-        <p>Khách hàng: <span id="customerName">@Model.CustomerName</span></p>
-        <p>Ghi chú: <span id="orderNote">@Model.OrderNote</span></p>
-
+        <p>Mã đơn:
+            <span id="orderId">#@Model.OrderId</span>
+        </p>
+        <p>Ngày:
+            <span id="orderDate">@Model.OrderDate</span>
+        </p>
+        <p>Khách hàng:
+            <span id="customerName">@Model.CustomerName</span>
+        </p>
+        <p>Ghi chú:
+            <span id="orderNote">@Model.OrderNote</span>
+        </p>
         <table class="invoice-table">
             <thead>
-                <tr>
-                    <th>Sản phẩm</th>
-                    <th>SL</th>
-                    <th>Giá</th>
-                    <th>Thành tiền</th>
-                </tr>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>SL</th>
+                <th>Giá</th>
+                <th>Thành tiền</th>
+            </tr>
             </thead>
             <tbody id="orderItems">
-                            @foreach (var item in Model.Items)
-                            {
-                        <tr>
-                            <td>@item.ProductName</td>
-                            <td>@item.Quantity</td>
-                            <td class="text-right">@item.Price.ToString("N0") VND</td>
-                            <td class="text-right">@item.SubTotal.ToString("N0") VND</td>
-                        </tr>
-                            }
+            @foreach (var item in Model.Items)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.Quantity</td>
+                    <td class="text-right">@item.Price.ToString("N0") VND</td>
+                    <td class="text-right">@item.SubTotal.ToString("N0") VND</td>
+                </tr>
+            }
             </tbody>
         </table>
-
-        <p class="text-right">Tổng tiền: <span id="totalAmount">@Model.TotalAmount.ToString("N0") VND</span></p>
-
+        <p class="text-right">Tổng tiền:
+            <span id="totalAmount">@Model.TotalAmount.ToString("N0") VND</span>
+        </p>
         <div class="invoice-footer">
             <p>Cảm ơn quý khách!</p>
         </div>
     </div>
-
     <button class="print-btn" onclick="printInvoice()">In hóa đơn</button>
+</div>
 </body>
 
 <script>

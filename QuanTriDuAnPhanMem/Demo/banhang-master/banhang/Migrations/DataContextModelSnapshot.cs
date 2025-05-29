@@ -229,6 +229,7 @@ namespace banhang.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("TotalAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("OrderId");
@@ -256,6 +257,7 @@ namespace banhang.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("UnitPrice")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ODId");
@@ -286,6 +288,7 @@ namespace banhang.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ProductDescription")
@@ -396,6 +399,7 @@ namespace banhang.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("TotalRefund")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("ReturnOrderId");
@@ -422,6 +426,7 @@ namespace banhang.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("RefundAmount")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ReturnOrderId")
@@ -628,7 +633,7 @@ namespace banhang.Migrations
                         {
                             Id = "11111111-1111-1111-1111-111111111111",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "59f4302d-e25d-4348-a2cd-779e170b3a98",
+                            ConcurrencyStamp = "f83101db-2176-468d-8e52-bd1caee2ac37",
                             District = "Quận 1",
                             Email = "admin@example.com",
                             EmailConfirmed = true,
@@ -638,11 +643,11 @@ namespace banhang.Migrations
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN",
                             Occupation = "Administrator",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKhFLC3PugDnafrElFZleuoVamvh/AjMRgm1f1dZi3+MB1H1VW70os2UZRHa4ASexw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMJYJS3SMLMnpSB9QykHnlYnjMNOKPVn+lC3sgsnJQNE6DW9zA92NwKVZ6CNCELRWg==",
                             PhoneNumberConfirmed = false,
                             ProfileImage = "uploads/default.png",
                             Province = "Hồ Chí Minh",
-                            SecurityStamp = "52e0dc87-0951-40a9-999d-30c8b369488f",
+                            SecurityStamp = "fa7794af-5295-43f7-ba07-66d710780ea4",
                             TwoFactorEnabled = false,
                             UserName = "admin",
                             Ward = "Phường Bến Nghé"

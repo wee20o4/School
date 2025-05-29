@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets\\banhang.cb65thvhix.bundle.scp.css"
     },
     {
-      "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\assets\\images\\Imgur.png",
-      "PackagePath": "staticwebassets\\assets\\images\\Imgur.png"
-    },
-    {
       "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\assets\\images\\background\\error-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\background\\error-bg.jpg"
     },
@@ -3849,20 +3845,8 @@
       "PackagePath": "staticwebassets\\scss\\widgets\\widgets.scss"
     },
     {
-      "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\uploads\\636f1f09-2d83-49a5-9506-d33a0600df07.jpg",
-      "PackagePath": "staticwebassets\\uploads\\636f1f09-2d83-49a5-9506-d33a0600df07.jpg"
-    },
-    {
       "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\uploads\\adf06d10-57d8-42a9-808b-0e48578e6aff.jpg",
       "PackagePath": "staticwebassets\\uploads\\adf06d10-57d8-42a9-808b-0e48578e6aff.jpg"
-    },
-    {
-      "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\uploads\\c15e3b2f-d24d-4d09-bf22-d6777d324e8a.jpg",
-      "PackagePath": "staticwebassets\\uploads\\c15e3b2f-d24d-4d09-bf22-d6777d324e8a.jpg"
-    },
-    {
-      "Id": "E:\\School\\QuanTriDuAnPhanMem\\Demo\\banhang-master\\banhang\\wwwroot\\uploads\\d00d736e-5a3a-4fe0-a808-54ea3765b85f.jpg",
-      "PackagePath": "staticwebassets\\uploads\\d00d736e-5a3a-4fe0-a808-54ea3765b85f.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.banhang.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

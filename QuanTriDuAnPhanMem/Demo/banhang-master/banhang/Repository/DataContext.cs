@@ -10,10 +10,7 @@ namespace banhang.Repository
 {
     public class DataContext: IdentityDbContext<AppUserModel>
     {
-        public DataContext(DbContextOptions<DataContext> options):base(options) 
-        { 
-            
-        }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
         public async Task<string> GenerateProductCode()
         {
             int? lastId = await this.Products.MaxAsync(p => (int?)p.ProductId);
@@ -23,11 +20,12 @@ namespace banhang.Repository
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Cấu hình quan hệ
             modelBuilder.Entity<PurchaseOrderDetail>()
-               .HasOne(pod => pod.Supplier)
-               .WithMany(s => s.PurchaseOrderDetails)
-               .HasForeignKey(pod => pod.SupplierId)
-               .OnDelete(DeleteBehavior.NoAction); // 🔥 Ngăn chặn xóa theo cascade
+                .HasOne(pod => pod.Supplier)
+                .WithMany(s => s.PurchaseOrderDetails)
+                .HasForeignKey(pod => pod.SupplierId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<PurchaseOrder>()
                 .HasMany(po => po.PurchaseOrderDetails)
@@ -35,10 +33,10 @@ namespace banhang.Repository
                 .HasForeignKey(pod => pod.PurchaseOrderId);
 
             modelBuilder.Entity<Order>()
-               .HasMany(o => o.Order_Details)
-               .WithOne(od => od.Order)
-               .HasForeignKey(od => od.OrderId)
-               .OnDelete(DeleteBehavior.Cascade); // Xóa đơn hàng sẽ xóa chi tiết
+                .HasMany(o => o.Order_Details)
+                .WithOne(od => od.Order)
+                .HasForeignKey(od => od.OrderId)
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Order_Details>()
                 .HasOne(od => od.Product)
@@ -48,8 +46,29 @@ namespace banhang.Repository
             modelBuilder.Entity<Order_Details>()
                 .HasKey(od => od.ODId);
 
-            var hasher = new PasswordHasher<AppUserModel>();
+            // ⚠️ Cấu hình độ chính xác cho decimal để tránh cảnh báo
+            modelBuilder.Entity<Product>()
+                .Property(p => p.Price)
+                .HasPrecision(18, 2);
 
+            modelBuilder.Entity<Order>()
+                .Property(o => o.TotalAmount)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<Order_Details>()
+                .Property(od => od.UnitPrice)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<ReturnOrder>()
+                .Property(r => r.TotalRefund)
+                .HasPrecision(18, 2);
+
+            modelBuilder.Entity<ReturnOrderDetail>()
+                .Property(r => r.RefundAmount)
+                .HasPrecision(18, 2);
+
+            // Seed tài khoản admin mặc định
+            var hasher = new PasswordHasher<AppUserModel>();
             modelBuilder.Entity<AppUserModel>().HasData(new AppUserModel
             {
                 Id = "11111111-1111-1111-1111-111111111111",
@@ -63,7 +82,7 @@ namespace banhang.Repository
                 Occupation = "Administrator",
                 FullName = "Administrator",
                 Province = "Hồ Chí Minh",
-                District = "Quận 1",  // Cần có giá trị hợp lệ
+                District = "Quận 1",
                 Ward = "Phường Bến Nghé",
                 Gender = "Nam",
                 ProfileImage = "uploads/default.png"
@@ -71,6 +90,7 @@ namespace banhang.Repository
 
             base.OnModelCreating(modelBuilder);
         }
+
 
         public DbSet<Product>Products { get; set; }
         public DbSet<Category> Categories { get; set; }

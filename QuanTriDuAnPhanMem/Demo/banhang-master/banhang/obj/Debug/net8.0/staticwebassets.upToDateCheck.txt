@@ -9,7 +9,6 @@ wwwroot\assets\images\big\img6.jpg
 wwwroot\assets\images\big\Thumbs.db
 wwwroot\assets\images\custom-select.png
 wwwroot\assets\images\favicon.png
-wwwroot\assets\images\Imgur.png
 wwwroot\assets\images\logo-light-icon.png
 wwwroot\assets\images\logo-light-text.png
 wwwroot\assets\images\users\1.jpg
@@ -959,7 +958,4 @@ wwwroot\scss\widgets\feeds.scss
 wwwroot\scss\widgets\profile.scss
 wwwroot\scss\widgets\steamline.scss
 wwwroot\scss\widgets\widgets.scss
-wwwroot\uploads\636f1f09-2d83-49a5-9506-d33a0600df07.jpg
 wwwroot\uploads\adf06d10-57d8-42a9-808b-0e48578e6aff.jpg
-wwwroot\uploads\c15e3b2f-d24d-4d09-bf22-d6777d324e8a.jpg
-wwwroot\uploads\d00d736e-5a3a-4fe0-a808-54ea3765b85f.jpg
